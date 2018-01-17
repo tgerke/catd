@@ -1,3 +1,10 @@
+This repository is a fork of https://bitbucket.org/lwaldron/catd/
+
+The reason for the fork is that the source build uses an outdated R version (2.15) and related packages (dated 2012-03-30). Updates here are leveraged towards the development of curatedProstateData at https://github.com/tgerke/curatedProstateData
+
+------------------------------------------------------
+------------------------------------------------------
+
 # Summary #
 
 This is a data pipeline for building clinically-annotated
@@ -142,7 +149,7 @@ downloadPROBLEMS.sh
 download_PMID19318476.sh
 download_PMID17290060.sh
 
---------------------- 
+---------------------
 QC.sh: optional, produce a quality control report for the datasets.
 Doesn't work in many cases.  Svitlana has a better version but hasn't
 incorporated it into the repository.
@@ -170,7 +177,7 @@ attach_PROCESSED.sh
 
 Read raw data filenames, processed data sample names, and curated
 metadata sample names, and remove any filenames or sample names which
-do not match between expression data and metadata.  
+do not match between expression data and metadata.
 
 ---------------------
 preprocess_AFFY.sh
@@ -275,47 +282,47 @@ R version 2.15.0 (2012-03-30)
 Platform: x86_64-unknown-linux-gnu (64-bit)
 
 locale:
- [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
- [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
- [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
- [7] LC_PAPER=C                 LC_NAME=C                 
- [9] LC_ADDRESS=C               LC_TELEPHONE=C            
-[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+ [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C
+ [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8
+ [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8
+ [7] LC_PAPER=C                 LC_NAME=C
+ [9] LC_ADDRESS=C               LC_TELEPHONE=C
+[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C
 
 attached base packages:
- [1] grid      splines   tools     stats     graphics  grDevices utils    
- [8] datasets  methods   base     
+ [1] grid      splines   tools     stats     graphics  grDevices utils
+ [8] datasets  methods   base
 
 other attached packages:
- [1] arrayQualityMetrics_3.12.0 affyPLM_1.32.0            
- [3] preprocessCore_1.20.0      gcrma_2.30.0              
- [5] frma_1.8.0                 gplots_2.11.0             
- [7] KernSmooth_2.23-8          caTools_1.13              
- [9] bitops_1.0-4.1             gtools_2.7.0              
-[11] GEOquery_2.23.5            lumi_2.10.0               
-[13] nleqslv_1.9.4              gdata_2.12.0              
-[15] WGCNA_1.23-1               MASS_7.3-22               
-[17] reshape_0.8.4              plyr_1.7.1                
-[19] cluster_1.14.2             Hmisc_3.9-3               
-[21] survival_2.36-14           flashClust_1.01-2         
-[23] dynamicTreeCut_1.21        impute_1.32.0             
-[25] biomaRt_2.12.0             affyio_1.24.0             
-[27] affy_1.36.0                Biobase_2.16.0            
-[29] BiocGenerics_0.4.0        
+ [1] arrayQualityMetrics_3.12.0 affyPLM_1.32.0
+ [3] preprocessCore_1.20.0      gcrma_2.30.0
+ [5] frma_1.8.0                 gplots_2.11.0
+ [7] KernSmooth_2.23-8          caTools_1.13
+ [9] bitops_1.0-4.1             gtools_2.7.0
+[11] GEOquery_2.23.5            lumi_2.10.0
+[13] nleqslv_1.9.4              gdata_2.12.0
+[15] WGCNA_1.23-1               MASS_7.3-22
+[17] reshape_0.8.4              plyr_1.7.1
+[19] cluster_1.14.2             Hmisc_3.9-3
+[21] survival_2.36-14           flashClust_1.01-2
+[23] dynamicTreeCut_1.21        impute_1.32.0
+[25] biomaRt_2.12.0             affyio_1.24.0
+[27] affy_1.36.0                Biobase_2.16.0
+[29] BiocGenerics_0.4.0
 
 loaded via a namespace (and not attached):
  [1] affxparser_1.30.0    annotate_1.36.0      AnnotationDbi_1.20.0
- [4] beadarray_2.8.0      BeadDataPackR_1.10.0 BiocInstaller_1.4.7 
- [7] Biostrings_2.26.1    bit_1.1-8            Cairo_1.5-1         
-[10] codetools_0.2-8      colorspace_1.1-1     DBI_0.2-5           
-[13] ff_2.2-7             foreach_1.4.0        genefilter_1.40.0   
-[16] GenomicRanges_1.10.1 hwriter_1.3          IRanges_1.16.2      
-[19] iterators_1.0.6      lattice_0.20-10      latticeExtra_0.6-24 
-[22] limma_3.14.0         Matrix_1.0-9         methylumi_2.4.0     
-[25] mgcv_1.7-21          nlme_3.1-104         oligo_1.22.0        
-[28] oligoClasses_1.20.0  parallel_2.15.0      RColorBrewer_1.0-5  
-[31] RCurl_1.95-0.1.2     reshape2_1.2.1       RSQLite_0.11.2      
-[34] setRNG_2011.11-2     stats4_2.15.0        stringr_0.6.1       
-[37] SVGAnnotation_0.93-1 vsn_3.26.0           XML_3.95-0.1        
-[40] xtable_1.7-0         zlibbioc_1.4.0      
-> 
+ [4] beadarray_2.8.0      BeadDataPackR_1.10.0 BiocInstaller_1.4.7
+ [7] Biostrings_2.26.1    bit_1.1-8            Cairo_1.5-1
+[10] codetools_0.2-8      colorspace_1.1-1     DBI_0.2-5
+[13] ff_2.2-7             foreach_1.4.0        genefilter_1.40.0
+[16] GenomicRanges_1.10.1 hwriter_1.3          IRanges_1.16.2
+[19] iterators_1.0.6      lattice_0.20-10      latticeExtra_0.6-24
+[22] limma_3.14.0         Matrix_1.0-9         methylumi_2.4.0
+[25] mgcv_1.7-21          nlme_3.1-104         oligo_1.22.0
+[28] oligoClasses_1.20.0  parallel_2.15.0      RColorBrewer_1.0-5
+[31] RCurl_1.95-0.1.2     reshape2_1.2.1       RSQLite_0.11.2
+[34] setRNG_2011.11-2     stats4_2.15.0        stringr_0.6.1
+[37] SVGAnnotation_0.93-1 vsn_3.26.0           XML_3.95-0.1
+[40] xtable_1.7-0         zlibbioc_1.4.0
+>
