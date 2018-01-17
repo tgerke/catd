@@ -1,0 +1,18 @@
+"Filename"					"Downloaded from: "											"Notes: "
+"PMID14706684_Lancaster_clinical_info_data.csv"					"https://discovery.genome.duke.edu/express/resources/1144/Lancaster_clinical_info.xls"											
+"PMID15897565_clinical_info.csv"					"https://discovery.genome.duke.edu/express/resources/1144/arrayWebSiteClinicalData2005.xls"											
+"PMID19318476_supp_1.csv"					"https://discovery.genome.duke.edu/express/resources/74/SUPPLEMENTARY_MATERIALS.doc"											
+"PMID19318476_supp_2.csv"																
+"PMID19318476_supp_3.csv"																
+"GSE9891_SuppTable.csv"					"http://clincancerres.aacrjournals.org/content/suppl/2008/08/26/14.16.5198.DC1/Supplementary_Data_-_Revised.pdf"											"(Note: I downloaded from the provided website, and copied and pasted from pages 27-30 from the PDF into a text editor (notepad), where I edited the format to make it csv compatible) (Abbreviations: Abbreviations:,NC,,not,classified,into,k-means,group;,MAL,,malignant;,LMP,,low,malignant,potential;,Ser,,serous;,Endo,,endometrioid;,Adeno,"
+"GSE7463_supp.csv"					"Ben's manually copying the data that they emailed (a .tif file) to Giovanni in response to our request."											"adenocarcinoma;,OV,,ovary;,PE,,peritoneum;,FT,,fallopian,tube;,UT,,uterus,,OM,,omentum;,CO,,colon;,D,,died;,D*,,died,of,other,causes;,R,,alive,and"
+																"relapsed;,PF,,alive,and,progression-free;,Pltx,,platin,treatment;,Tax,,taxol,treatment;,Neo,,neoadjuvant,treatment;,Nil,,no,macropscopic,disease;,<1,"
+																"macrospcopic,disease,<,or,=1cm;,>1,,macroscopic,disease,>1cm;,macro,size,NK,,macroscopic,disease,size,unknown;,NK,,residual,disease,unknown)"
+																
+"PMID17290060_clinical_info.csv"					"https://discovery.genome.duke.edu/express/resources/193/OVCclinicalinfo.xls"											
+																
+"clinical_patient_public_ov.txt"					"https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/ov/bcr/minbiotab/clin/clinical_patient_public_ov.txt"											
+"clinical_follow_up_v1.0_public_ov.txt"					"https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/ov/bcr/minbiotab/clin/clinical_follow_up_v1.0_public_ov.txt"
+"TCGA_Batch_Data.csv"					"https://tcga-data.nci.nih.gov/uuid/uuidBrowser.htm"											
+"TCGA_file_sources.txt"					"This is the output of `find` on the .CEL files acquired from https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/ov/cgcc/broad.mit.edu/ht_hg-u133a/transcriptome after unzipping these files.  The details of the download and `find` can be found in src/download_TCGA.sh."											
+"E-MTAB-386.sdrf.txt"							"http://www.ebi.ac.uk/arrayexpress/files/E-MTAB-386/E-MTAB-386.sdrf.txt"

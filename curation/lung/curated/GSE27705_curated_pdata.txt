@@ -1,0 +1,31 @@
+"sample_name"	"alt_sample_name"	"unique_patient_ID"	"sample_type"	"smoker"	"primarysite"	"gender"	"race"	"packyears"	"bronch_status"	"histology"	"subtype"	"T"	"pstage"	"N"	"M"	"substage"	"side_of_lung"	"received_platinum_based_therapy_with_progression"	"egfr_status"	"gefitinib_treatment"	"summary_grade"	"summary_stage"	"cause_of_death"	"kras_mutation"	"p53_mutation"	"pik3ca_mutation"	"age_at_initial_pathologic_diagnosis"	"days_to_tumor_recurrence"	"recurrence_status"	"days_to_death"	"vital_status"	"os_binary"	"relapse_binary"
+"GSM686110"	"NSCLC_01_early"	NA	NA	NA	"lung"	NA	NA	NA	NA	"nsclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"early"	NA	NA	NA	NA	" 52.8"	NA	NA	195	"deceased"	NA	NA
+"GSM686111"	"NSCLC_02_early"	NA	NA	NA	"lung"	NA	NA	NA	NA	"nsclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"early"	NA	NA	NA	NA	" 73"	NA	NA	210	"deceased"	NA	NA
+"GSM686112"	"NSCLC_03_early"	NA	NA	NA	"lung"	NA	NA	NA	NA	"nsclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"early"	NA	NA	NA	NA	" 61.7"	NA	NA	219	"deceased"	NA	NA
+"GSM686113"	"NSCLC_04_early"	NA	NA	NA	"lung"	NA	NA	NA	NA	"nsclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"early"	NA	NA	NA	NA	" 74.1"	NA	NA	222	"deceased"	NA	NA
+"GSM686114"	"NSCLC_05_early"	NA	NA	NA	"lung"	NA	NA	NA	NA	"nsclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"early"	NA	NA	NA	NA	" 53.9"	NA	NA	228	"deceased"	NA	NA
+"GSM686115"	"NSCLC_06_early"	NA	NA	NA	"lung"	NA	NA	NA	NA	"nsclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"early"	NA	NA	NA	NA	" 53.4"	NA	NA	252	"deceased"	NA	NA
+"GSM686116"	"NSCLC_07_early"	NA	NA	NA	"lung"	NA	NA	NA	NA	"nsclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"early"	NA	NA	NA	NA	" 74.4"	NA	NA	252	"deceased"	NA	NA
+"GSM686117"	"NSCLC_08_early"	NA	NA	NA	"lung"	NA	NA	NA	NA	"nsclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"early"	NA	NA	NA	NA	" 73.8"	NA	NA	279	"deceased"	NA	NA
+"GSM686118"	"NSCLC_09_early"	NA	NA	NA	"lung"	NA	NA	NA	NA	"nsclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"early"	NA	NA	NA	NA	" 68.3"	NA	NA	288	"deceased"	NA	NA
+"GSM686119"	"NSCLC_10_early"	NA	NA	NA	"lung"	NA	NA	NA	NA	"nsclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"early"	NA	NA	NA	NA	" 70.1"	NA	NA	297	"deceased"	NA	NA
+"GSM686120"	"NSCLS_11_late"	NA	NA	NA	"lung"	NA	NA	NA	NA	"nsclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"late"	NA	NA	NA	NA	" 53.3"	NA	NA	4434	"living"	NA	NA
+"GSM686121"	"NSCLC_12_late"	NA	NA	NA	"lung"	NA	NA	NA	NA	"nsclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"late"	NA	NA	NA	NA	" 74.6"	NA	NA	2223	"living"	NA	NA
+"GSM686122"	"NSCLC_13_late"	NA	NA	NA	"lung"	NA	NA	NA	NA	"nsclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"late"	NA	NA	NA	NA	" 75.1"	NA	NA	1815	"living"	NA	NA
+"GSM686123"	"NSCLC_14_late"	NA	NA	NA	"lung"	NA	NA	NA	NA	"nsclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"late"	NA	NA	NA	NA	" 59.7"	NA	NA	4434	"living"	NA	NA
+"GSM686124"	"NSCLC_15_late"	NA	NA	NA	"lung"	NA	NA	NA	NA	"nsclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"late"	NA	NA	NA	NA	" 67.9"	NA	NA	4914	"living"	NA	NA
+"GSM686125"	"NSCLC_16_late"	NA	NA	NA	"lung"	NA	NA	NA	NA	"nsclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"late"	NA	NA	NA	NA	" 47.3"	NA	NA	5115	"living"	NA	NA
+"GSM686126"	"NSCLC_17_late"	NA	NA	NA	"lung"	NA	NA	NA	NA	"nsclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"late"	NA	NA	NA	NA	" 68.7"	NA	NA	4761	"deceased"	NA	NA
+"GSM686127"	"NSCLC_18_late"	NA	NA	NA	"lung"	NA	NA	NA	NA	"nsclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"late"	NA	NA	NA	NA	" 63.9"	NA	NA	5322	"living"	NA	NA
+"GSM686128"	"NSCLC_19_late"	NA	NA	NA	"lung"	NA	NA	NA	NA	"nsclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"late"	NA	NA	NA	NA	" 60.9"	NA	NA	5529	"deceased"	NA	NA
+"GSM686129"	"NSCLC_20_late"	NA	NA	NA	"lung"	NA	NA	NA	NA	"nsclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"late"	NA	NA	NA	NA	" 54.3"	NA	NA	4869	"living"	NA	NA
+"GSM686130"	"NORM_01_normal"	NA	NA	NA	"lung"	NA	NA	NA	NA	"normal"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	""	NA	NA	NA	""	NA	NA
+"GSM686131"	"NORM_02_normal"	NA	NA	NA	"lung"	NA	NA	NA	NA	"normal"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	""	NA	NA	NA	""	NA	NA
+"GSM686132"	"NORM_03_normal"	NA	NA	NA	"lung"	NA	NA	NA	NA	"normal"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	""	NA	NA	NA	""	NA	NA
+"GSM686133"	"NORM_04_normal"	NA	NA	NA	"lung"	NA	NA	NA	NA	"normal"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	""	NA	NA	NA	""	NA	NA
+"GSM686134"	"NORM_05_normal"	NA	NA	NA	"lung"	NA	NA	NA	NA	"normal"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	""	NA	NA	NA	""	NA	NA
+"GSM686135"	"NORM_06_normal"	NA	NA	NA	"lung"	NA	NA	NA	NA	"normal"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	""	NA	NA	NA	""	NA	NA
+"GSM686136"	"NORM_07_normal"	NA	NA	NA	"lung"	NA	NA	NA	NA	"normal"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	""	NA	NA	NA	""	NA	NA
+"GSM686137"	"NORM_08_normal"	NA	NA	NA	"lung"	NA	NA	NA	NA	"normal"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	""	NA	NA	NA	""	NA	NA
+"GSM686138"	"NORM_09_normal"	NA	NA	NA	"lung"	NA	NA	NA	NA	"normal"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	""	NA	NA	NA	""	NA	NA
+"GSM686139"	"NORM_10_normal"	NA	NA	NA	"lung"	NA	NA	NA	NA	"normal"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	""	NA	NA	NA	""	NA	NA

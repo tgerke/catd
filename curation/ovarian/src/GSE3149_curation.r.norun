@@ -1,0 +1,54 @@
+rm(list=ls())
+source("../../functions.R")
+
+uncurated <- read.csv("../uncurated/GSE3149_full_pdata.csv",as.is=TRUE,row.names=1)
+uncurated.supp <- read.csv("../uncurated/GSE3149_supplementary_phenotype_data.csv",as.is=TRUE)
+uncurated.supp <- uncurated.supp[match(uncurated$title, sub("_[ab]", "", uncurated.supp$Tumor)), 1:4]
+
+celfile.dir <- "../../../DATA/GSE3149/RAW"
+
+##initial creation of curated dataframe
+curated <- initialCuratedDF(rownames(uncurated),template.filename="template_ov.csv")
+
+##--------------------
+##start the mappings
+##--------------------
+
+##title -> alt_sample_name
+tmp <- uncurated$title
+curated$alt_sample_name <- tmp
+
+##sample_type are all tumors
+curated$sample_type <- "tumor"
+
+##Assume primary_site and arrayed_site are ovary.
+curated$primarysite <- "ov"
+curated$arrayedsite <- "ov"
+
+##Survival (months) -> days_to_death
+tmp <- uncurated.supp$Survival..months.
+tmp <- as.numeric(tmp)
+tmp <- tmp * 30  #months to days
+curated$days_to_death <- tmp
+
+##Status (0=alive, 1=dead)-> vital_status
+tmp <- uncurated.supp$Status..0.alive..1.dead.
+tmp[tmp=="0"] <- "living"
+tmp[tmp=="1"] <- "deceased"
+curated$vital_status <- tmp
+
+##STAGE -> stage
+tmp <- uncurated.supp$STAGE
+tmp <- sub("[ABC]$","",tmp)
+tmp <- mapstage(tmp)
+curated$T <- tmp
+
+##STAGE -> substage
+tmp <- uncurated.supp$STAGE
+tmp <- gsub("[IV]","",tmp)
+curated$substage <- tmp
+  
+
+curated <- postProcess(curated)
+
+write.table(curated, row.names=FALSE, file="../curated/GSE3149_curated_pdata.txt",sep="\t")

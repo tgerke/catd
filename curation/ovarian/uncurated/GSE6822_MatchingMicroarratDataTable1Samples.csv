@@ -1,0 +1,38 @@
+AM_ID,Sample,T1,Primary_Culture_Passage_Used,tumor_Grade,Tumor_Stage,Analysis
+AM137, LMP206 ,tumor of low malignancy potential,not applicable, B , IIIC ," HuFL,IHC "
+AM046, TOV513G ,primary invasive epithelial ovarian tumors,not applicable,3, IIIC ," HuFL,IHC "
+AM047, TOV540 ,primary invasive epithelial ovarian tumors,8,3, IIIC ," HuFL,IHC "
+AM058, LMP720G ,tumor of low malignancy potential,14, B , IIIA ," HuFL,IHC "
+AM087, TOV730EP ,primary invasive epithelial ovarian tumors,4,3, IIIC , HuFL 
+AM027, LMP793D ,tumor of low malignancy potential,not applicable, B , IIIC , HuFL 
+AM076, TOV800EP ,primary invasive epithelial ovarian tumors,not applicable,3, IIIC , HuFL 
+AM030, LMP845 ,tumor of low malignancy potential,not applicable, B , IIIC ," HuFL,IHC "
+, LMP849G ,tumor of low malignancy potential,not applicable, B , IIIC , IHC 
+AM077, TOV881 ,primary invasive epithelial ovarian tumors,3,3, IIIC ," HuFL,IHC "
+, TOV884D ,primary invasive epithelial ovarian tumors,3,3, IIIC , IHC 
+AM232, TOV892 ,primary invasive epithelial ovarian tumors,5,3, IIIC , HuFL 
+AM088, TOV908D ,primary invasive epithelial ovarian tumors,5,3, IIIC ," HuFL,IHC "
+AM059, LMP916 ,tumor of low malignancy potential,3, B , IIIA ," HuFL,IHC "
+AM060, LMP920D ,tumor of low malignancy potential,6, B , IIIA ," HuFL,IHC "
+, TOV952G ,primary invasive epithelial ovarian tumors,not applicable,3, IIIC , IHC 
+AM236, TOV959G ,primary invasive epithelial ovarian tumors,5,3, IIIC ," HuFL,IHC "
+AM237, TOV960EP ,primary invasive epithelial ovarian tumors,5,3, IIIC , HuFL 
+, TOV974G ,primary invasive epithelial ovarian tumors,not applicable,2, IIIC , IHC 
+AM176/AM064, LMP984 ,tumor of low malignancy potential,5, B , IB ," HuFL,IHC "
+, TOV986EP ,primary invasive epithelial ovarian tumors,not applicable,2, IIIC ," HuFL,IHC "
+AM065, LMP991G ,tumor of low malignancy potential,5, B , IB ," HuFL,IHC "
+AM053, TOV993EP ,primary invasive epithelial ovarian tumors,not applicable,3, IIIC ," HuFL,IHC "
+AM075, LMP1010D ,tumor of low malignancy potential,4, B , IB ," HuFL,IHC "
+AM179, LMP1010G ,tumor of low malignancy potential,not applicable, B , IB , HuFL 
+AM124, TOV1054D ,primary invasive epithelial ovarian tumors,not applicable,3, IB ," HuFL,IHC "
+AM125, TOV1054G ,primary invasive epithelial ovarian tumors,not applicable,3, IB ," HuFL,IHC "
+AM253, LMP1064D ,tumor of low malignancy potential,not applicable, B , IA , IHC 
+, LMP1068D ,tumor of low malignancy potential,not applicable, B , IIIC , IHC 
+AM255, TOV1095D ,primary invasive epithelial ovarian tumors,not applicable,3, IIIC , IHC 
+AM256, TOV1095G ,primary invasive epithelial ovarian tumors,not applicable,3, IIIC , IHC 
+AM261, TOV1108D ,primary invasive epithelial ovarian tumors,not applicable,3, IIIC , IHC 
+AM263, TOV1118D ,primary invasive epithelial ovarian tumors,not applicable,3, IIIC , IHC 
+, TOV1142D ,primary invasive epithelial ovarian tumors,not applicable,3, IIIC , IHC 
+, TOV1150D ,primary invasive epithelial ovarian tumors,not applicable,3, IIC , IHC 
+, TOV1150G ,primary invasive epithelial ovarian tumors,not applicable,3, IIC , IHC 
+AM381, TOV1217EP ,primary invasive epithelial ovarian tumors,not applicable,3, IIIC , IHC 

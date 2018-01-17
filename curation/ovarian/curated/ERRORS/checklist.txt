@@ -1,0 +1,27 @@
+"column.names" "variable.regex.checks"
+"E-MTAB-386_curated_pdata.txt" TRUE TRUE
+"GSE12418_curated_pdata.txt" TRUE TRUE
+"GSE12470_curated_pdata.txt" TRUE TRUE
+"GSE13876_curated_pdata.txt" TRUE TRUE
+"GSE14764_curated_pdata.txt" TRUE TRUE
+"GSE17260_curated_pdata.txt" TRUE TRUE
+"GSE18154_curated_pdata.txt" TRUE TRUE
+"GSE18520_curated_pdata.txt" TRUE TRUE
+"GSE19161_curated_pdata.txt" TRUE TRUE
+"GSE19829-GPL570_curated_pdata.txt" TRUE TRUE
+"GSE19829-GPL8300_curated_pdata.txt" TRUE TRUE
+"GSE20565_curated_pdata.txt" TRUE TRUE
+"GSE2109_curated_pdata.txt" TRUE TRUE
+"GSE26712_curated_pdata.txt" TRUE TRUE
+"GSE30009_curated_pdata.txt" TRUE TRUE
+"GSE32062-GPL6480_curated_pdata.txt" TRUE TRUE
+"GSE32063_curated_pdata.txt" TRUE TRUE
+"GSE6008_curated_pdata.txt" TRUE TRUE
+"GSE6822_curated_pdata.txt" TRUE TRUE
+"GSE8842_curated_pdata.txt" TRUE TRUE
+"GSE9891_curated_pdata.txt" TRUE TRUE
+"PMID14706684_curated_pdata.txt" TRUE TRUE
+"PMID15897565_curated_pdata.txt" TRUE TRUE
+"PMID17290060_curated_pdata.txt" TRUE TRUE
+"PMID19318476_curated_pdata.txt" TRUE TRUE
+"TCGA_curated_pdata.txt" TRUE TRUE

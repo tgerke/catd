@@ -1,0 +1,16 @@
+emails from Svitlana
+
+April 20 2011:
+
+GSE18521 is a superset containing GSE18520 (ovarian tumors and normal tissue) as its part and GSE18373 which is expression in cell lines with recombinant MAGP2.
+
+GSE20565 - has a bunch of SNP arrays in it, and for the gene expression a fair amount of samples is in fact breast cancer metastasis.
+I did not find the "curated" version of the phenotypes for this dataset, and I can not figure out by brief looking at the curation script how those breast cancer samples will be handled.. Perhaps, this is something you would like to double check.
+
+The eSet file in the PROCESSED folder does not contain SNP arrays - and the question is if they were deliberately excluded at the curation step, or they were just luckily dropped by Bioconductor as the ones having the CDF different from the first 140 samples.
+
+April 20 2011:
+
+GSE13813 is not a gene expression dataset - those are SNP arrays.
+
+GSE17260, GSE9891: columns shifted?

@@ -1,0 +1,97 @@
+stop("This script is incomplete, and this dataset is not part of curatedOvarianData.")
+
+rm(list=ls())
+
+source("../../functions.R")
+
+uncurated1 <- read.csv("../uncurated/GSE7463_full_pdata.csv",as.is=TRUE)
+uncurated2 <- read.csv("../uncurated/GSE7463_supp.csv",as.is=TRUE)
+tmp <- uncurated2$OCI.No.
+tmp <- gsub("[^\\d]","",tmp,perl=TRUE)
+uncurated2$OCI.No. <- tmp
+
+celfile.dir <- "../../../DATA/GSE7463/RAW"
+
+##uncurated2$OCI.No. <- paste(uncurated2$OCI.No.,sep="")
+uncurated2 <- uncurated2[match(uncurated1$title,uncurated2$OCI.No.),]
+(MatchWasSuccessful <- all.equal(uncurated1$title,uncurated2$OCI.No.))
+
+if(MatchWasSuccessful){
+  uncurated <- cbind(uncurated1,uncurated2)
+}
+
+##initial creation of curated dataframe
+curated <- initialCuratedDF(rownames(uncurated),template.filename="template_ov.csv")
+
+##--------------------
+##start the mappings
+##--------------------
+
+##title -> alt_sample_name
+tmp <- uncurated$title
+curated$alt_sample_name <- tmp
+
+##source_name_ch1 -> sample_type
+tmp <- uncurated$source_name_ch1
+curated$sample_type <- "tumor"
+
+#primarysite all "ov"?
+curated$primarysite <- "ov"
+
+##characteristics_ch1.1 -> subtype
+tmp <- uncurated$characteristics_ch1.1
+tmp <- sub("Histology:", "",tmp,fixed=TRUE)
+tmp[tmp=="Serous papillary adenocarcinoma"] <- "ser"
+tmp[tmp=="Endometriod adenocarcinoma"] <- "endo"
+tmp[tmp=="Undifferentiated carcinoma"] <- "undifferentiated"
+tmp[tmp=="Serous cystadenoma"] <- "ser"
+tmp[tmp=="Simple cystadenoma"] <- "undifferentiated"
+tmp[tmp=="Serous cystadenofibroma"] <- "ser"
+curated$subtype <- tmp
+
+##characteristics_ch1.1 -> T
+tmp <- uncurated$characteristics_ch1.2
+tmp <- gsub("[^\\D]","",tmp,perl=TRUE)
+#tmp <- sub("Stage:na", NA,tmp,fixed=TRUE)
+tmp <- sub("Stage:III/", "3",tmp,fixed=TRUE)
+tmp <- sub("Stage:IIIc/", "3",tmp,fixed=TRUE)
+tmp <- sub("Stage:IIIa/", "3",tmp,fixed=TRUE)
+tmp <- sub("Stage:IIIb/", "3",tmp,fixed=TRUE)
+tmp <- sub("Stage:I/", "1",tmp,fixed=TRUE)
+tmp <- sub("Stage:Iib/", "1",tmp,fixed=TRUE)
+tmp <- sub("Stage:Ic", "1",tmp,fixed=TRUE)
+tmp <- sub("Stage:IV/", "4",tmp,fixed=TRUE)
+tmp <- sub("Stage:II/", "2",tmp,fixed=TRUE)
+tmp <- sub("Stage:II/", "2",tmp,fixed=TRUE)
+tmp[tmp=="I/"] <- "1"
+tmp[tmp=="1/"] <- "1"
+tmp[tmp=="Stage:na"] <- NA
+
+curated$T <- tmp
+
+##characteristics_ch1.1 -> substage
+tmp <- uncurated$characteristics_ch1.2
+tmp <- sub("Stage:", "",tmp,fixed=TRUE)
+#tmp[tmp=="na"] <- NA
+tmp <- gsub("[^abc]","",tmp,perl=TRUE)
+tmp[tmp==""] <- NA
+curated$substage <- tmp
+
+##characteristics_ch1.1 -> G
+tmp <- uncurated$characteristics_ch1.2
+tmp <- sub("Stage:", "",tmp,fixed=TRUE)
+tmp <- gsub("[^\\d]","",tmp,perl=TRUE)
+curated$G <- tmp
+
+##characteristics_ch1.3 -> age_at_initial_pathologic_diagnosis
+tmp <- uncurated$characteristics_ch1.3
+tmp <- sub("Age at surgery: ", "",tmp,fixed=TRUE)
+tmp <- sub("Age at surgery:", "",tmp,fixed=TRUE)
+tmp <- as.numeric(tmp)
+curated$age_at_initial_pathologic_diagnosis <- tmp
+ 
+#tmp2 <- edit(curated) 
+
+curated <- postProcess(curated)
+
+write.table(curated, row.names=FALSE, file="../curated/GSE7463_curated_pdata.txt",sep="\t")

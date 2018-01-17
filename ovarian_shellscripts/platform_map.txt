@@ -1,0 +1,3 @@
+GEO_accession	platform_name
+GPL8300	HG_U95Av2
+GPL570	HG-U133_Plus_2

@@ -1,0 +1,164 @@
+"sample_name"	"alt_sample_name"	"unique_patient_ID"	"sample_type"	"smoker"	"primarysite"	"gender"	"race"	"packyears"	"bronch_status"	"histology"	"subtype"	"T"	"N"	"M"	"substage"	"side_of_lung"	"received_platinum_based_therapy_with_progression"	"egfr_status"	"gefitinib_treatment"	"summary_grade"	"cause_of_death"	"tumor_percent"	"necrosis_percent"	"fibrosis_percent"	"kras_mutation"	"p53_mutation"	"pik3ca_mutation"	"age_at_initial_pathologic_diagnosis"	"days_to_tumor_recurrence"	"recurrence_status"	"days_to_death"	"vital_status"	"os_binary"	"relapse_binary"	"summarygrade"
+"GSM302996"	"Patient 001 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"71"	NA	"recurrence"	"1326"	"deceased"	NA	NA	"poorly"
+"GSM302997"	"Patient 002 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"49"	NA	"norecurrence"	"3275"	"living"	NA	NA	"moderately"
+"GSM302998"	"Patient 003 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"51"	NA	"recurrence"	"1687"	"deceased"	NA	NA	"moderately"
+"GSM302999"	"Patient 004 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"51"	NA	"norecurrence"	"3214"	"living"	NA	NA	"moderately"
+"GSM303000"	"Patient 005 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"67"	NA	"recurrence"	"1200"	"deceased"	NA	NA	"well"
+"GSM303001"	"Patient 006 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"66"	NA	"recurrence"	"223"	"deceased"	NA	NA	"moderately"
+"GSM303002"	"Patient 007 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"71"	NA	"norecurrence"	"3245"	"living"	NA	NA	"moderately"
+"GSM303003"	"Patient 008 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	"62"	NA	"norecurrence"	"3274"	"living"	NA	NA	"well"
+"GSM303004"	"Patient 009 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"47"	NA	"recurrence"	"511"	"deceased"	NA	NA	"poorly"
+"GSM303005"	"Patient 010 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"60"	NA	"norecurrence"	"3245"	"living"	NA	NA	"well"
+"GSM303006"	"Patient 011 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"64"	NA	"recurrence"	"3295"	"living"	NA	NA	"moderately"
+"GSM303007"	"Patient 012 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"57"	NA	"norecurrence"	"3260"	"living"	NA	NA	"moderately"
+"GSM303008"	"Patient 013 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"55"	NA	"recurrence"	"1855"	"deceased"	NA	NA	"moderately"
+"GSM303009"	"Patient 014 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	"74"	NA	"recurrence"	"694"	"deceased"	NA	NA	"well"
+"GSM303010"	"Patient 015 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"61"	NA	"norecurrence"	"3246"	"living"	NA	NA	"poorly"
+"GSM303011"	"Patient 016 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"67"	NA	"norecurrence"	"3169"	"living"	NA	NA	"moderately"
+"GSM303012"	"Patient 017 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"63"	NA	"norecurrence"	"3161"	"living"	NA	NA	"poorly"
+"GSM303013"	"Patient 018 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"59"	NA	"recurrence"	"1030"	"deceased"	NA	NA	"well"
+"GSM303014"	"Patient 019 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"66"	NA	"recurrence"	"2102"	"deceased"	NA	NA	"poorly"
+"GSM303015"	"Patient 020 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"68"	NA	"norecurrence"	"3057"	"living"	NA	NA	"moderately"
+"GSM303016"	"Patient 021 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"64"	NA	"norecurrence"	"3182"	"living"	NA	NA	"moderately"
+"GSM303017"	"Patient 022 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"70"	NA	"norecurrence"	"3009"	"living"	NA	NA	"well"
+"GSM303018"	"Patient 023 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"43"	NA	"norecurrence"	"3004"	"living"	NA	NA	"moderately"
+"GSM303019"	"Patient 024 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"73"	NA	"norecurrence"	"3170"	"living"	NA	NA	"poorly"
+"GSM303020"	"Patient 025 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"72"	NA	"norecurrence"	"2974"	"living"	NA	NA	"moderately"
+"GSM303021"	"Patient 026 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"56"	NA	"norecurrence"	"2879"	"living"	NA	NA	"well"
+"GSM303022"	"Patient 027 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"75"	NA	"recurrence"	"1271"	"deceased"	NA	NA	"poorly"
+"GSM303023"	"Patient 028 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"61"	NA	"norecurrence"	"2873"	"living"	NA	NA	"well"
+"GSM303024"	"Patient 029 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"62"	NA	"norecurrence"	"2979"	"living"	NA	NA	"poorly"
+"GSM303025"	"Patient 030 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	"61"	NA	"norecurrence"	"2905"	"living"	NA	NA	"poorly"
+"GSM303026"	"Patient 031 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	"y"	NA	NA	NA	NA	NA	"n"	"n"	NA	"32"	NA	"recurrence"	"2885"	"deceased"	NA	NA	"well"
+"GSM303027"	"Patient 032 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"53"	NA	"recurrence"	"2701"	"living"	NA	NA	"poorly"
+"GSM303028"	"Patient 033 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	"66"	NA	"recurrence"	"896"	"deceased"	NA	NA	"well"
+"GSM303029"	"Patient 034 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"55"	NA	"recurrence"	"2910"	"living"	NA	NA	"poorly"
+"GSM303030"	"Patient 035 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"62"	NA	"norecurrence"	"2813"	"living"	NA	NA	"well"
+"GSM303031"	"Patient 036 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"64"	NA	"norecurrence"	"2749"	"living"	NA	NA	"well"
+"GSM303032"	"Patient 037 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	"y"	NA	NA	NA	NA	NA	"n"	"n"	NA	"63"	NA	"recurrence"	"2932"	"living"	NA	NA	"well"
+"GSM303033"	"Patient 038 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"69"	NA	"recurrence"	"1389"	"deceased"	NA	NA	"moderately"
+"GSM303034"	"Patient 039 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"52"	NA	"norecurrence"	"2796"	"living"	NA	NA	"well"
+"GSM303035"	"Patient 040 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"52"	NA	"recurrence"	"361"	"deceased"	NA	NA	"poorly"
+"GSM303036"	"Patient 041 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"62"	NA	"recurrence"	"397"	"deceased"	NA	NA	"moderately"
+"GSM303037"	"Patient 042 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"62"	NA	"norecurrence"	"2506"	"living"	NA	NA	"well"
+"GSM303038"	"Patient 043 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"67"	NA	"norecurrence"	"2426"	"living"	NA	NA	"poorly"
+"GSM303039"	"Patient 044 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	"y"	NA	NA	NA	NA	NA	"n"	"n"	NA	"63"	NA	"recurrence"	"2193"	"deceased"	NA	NA	"poorly"
+"GSM303040"	"Patient 045 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"49"	NA	"recurrence"	"2797"	"living"	NA	NA	"poorly"
+"GSM303041"	"Patient 046 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"59"	NA	"recurrence"	"2355"	"living"	NA	NA	"moderately"
+"GSM303042"	"Patient 047 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"46"	NA	"norecurrence"	"2729"	"living"	NA	NA	"well"
+"GSM303043"	"Patient 048 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"61"	NA	"norecurrence"	"2702"	"living"	NA	NA	"moderately"
+"GSM303044"	"Patient 049 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"35"	NA	"recurrence"	"636"	"deceased"	NA	NA	"poorly"
+"GSM303045"	"Patient 050 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	"76"	NA	NA	"828"	"deceased"	NA	NA	"well"
+"GSM303046"	"Patient 051 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"76"	NA	"norecurrence"	"2702"	"living"	NA	NA	"poorly"
+"GSM303047"	"Patient 052 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"84"	NA	"norecurrence"	"2456"	"living"	NA	NA	"poorly"
+"GSM303048"	"Patient 053 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"y"	"y"	NA	"64"	NA	"recurrence"	"784"	"deceased"	NA	NA	"moderately"
+"GSM303049"	"Patient 054 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"53"	NA	"norecurrence"	"596"	"deceased"	NA	NA	"poorly"
+"GSM303050"	"Patient 055 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"53"	NA	"norecurrence"	"2520"	"living"	NA	NA	"moderately"
+"GSM303051"	"Patient 056 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	"y"	NA	NA	NA	NA	NA	"n"	"n"	NA	"62"	NA	"recurrence"	"2347"	"deceased"	NA	NA	"well"
+"GSM303052"	"Patient 057 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	"y"	NA	NA	NA	NA	NA	"n"	"n"	NA	"73"	NA	"recurrence"	"1880"	"deceased"	NA	NA	"well"
+"GSM303053"	"Patient 058 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	"y"	NA	NA	NA	NA	NA	"y"	"y"	NA	"47"	NA	"recurrence"	"2050"	"deceased"	NA	NA	"moderately"
+"GSM303054"	"Patient 059 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"74"	NA	"norecurrence"	"2072"	"living"	NA	NA	"poorly"
+"GSM303055"	"Patient 060 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"56"	NA	"recurrence"	"440"	"deceased"	NA	NA	"poorly"
+"GSM303056"	"Patient 061 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"69"	NA	"norecurrence"	"2525"	"living"	NA	NA	"moderately"
+"GSM303057"	"Patient 062 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"68"	NA	"recurrence"	"482"	"deceased"	NA	NA	"poorly"
+"GSM303058"	"Patient 063 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"41"	NA	"recurrence"	"1164"	"deceased"	NA	NA	"moderately"
+"GSM303059"	"Patient 064 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"55"	NA	"norecurrence"	"2533"	"living"	NA	NA	"poorly"
+"GSM303060"	"Patient 065 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"60"	NA	"norecurrence"	"2528"	"living"	NA	NA	"moderately"
+"GSM303061"	"Patient 066 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"66"	NA	"norecurrence"	"2353"	"living"	NA	NA	"well"
+"GSM303062"	"Patient 067 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"42"	NA	"norecurrence"	"2507"	"living"	NA	NA	"well"
+"GSM303063"	"Patient 068 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	"y"	NA	NA	NA	NA	NA	"n"	"n"	NA	"56"	NA	"recurrence"	"2519"	"living"	NA	NA	"moderately"
+"GSM303064"	"Patient 069 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	"y"	NA	NA	NA	NA	NA	"n"	"y"	NA	"50"	NA	"recurrence"	"2521"	"living"	NA	NA	"well"
+"GSM303065"	"Patient 070 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"70"	NA	"recurrence"	"1501"	"deceased"	NA	NA	"well"
+"GSM303066"	"Patient 071 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"61"	NA	"norecurrence"	"2260"	"living"	NA	NA	"well"
+"GSM303067"	"Patient 072 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	"63"	NA	"norecurrence"	"2339"	"living"	NA	NA	"poorly"
+"GSM303068"	"Patient 073 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"60"	NA	"recurrence"	"1229"	"deceased"	NA	NA	"poorly"
+"GSM303069"	"Patient 074 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	"58"	NA	"norecurrence"	"2341"	"living"	NA	NA	"moderately"
+"GSM303070"	"Patient 075 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"60"	NA	"recurrence"	"777"	"deceased"	NA	NA	"poorly"
+"GSM303071"	"Patient 076 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"65"	NA	"recurrence"	"1333"	"deceased"	NA	NA	"moderately"
+"GSM303072"	"Patient 077 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"60"	NA	"norecurrence"	"2348"	"living"	NA	NA	"well"
+"GSM303073"	"Patient 078 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"82"	NA	"recurrence"	"1008"	"deceased"	NA	NA	"poorly"
+"GSM303074"	"Patient 079 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"67"	NA	"recurrence"	"1201"	"deceased"	NA	NA	"poorly"
+"GSM303075"	"Patient 080 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"67"	NA	"norecurrence"	"1956"	"living"	NA	NA	"moderately"
+"GSM303076"	"Patient 081 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"60"	NA	"recurrence"	"749"	"deceased"	NA	NA	"poorly"
+"GSM303077"	"Patient 082 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"66"	NA	"norecurrence"	"2335"	"living"	NA	NA	"moderately"
+"GSM303078"	"Patient 083 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"73"	NA	"recurrence"	"860"	"deceased"	NA	NA	"moderately"
+"GSM303079"	"Patient 084 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	"74"	NA	"recurrence"	"186"	"deceased"	NA	NA	"poorly"
+"GSM303080"	"Patient 085 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"56"	NA	"norecurrence"	"2342"	"living"	NA	NA	"poorly"
+"GSM303081"	"Patient 086 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"49"	NA	"recurrence"	"1074"	"deceased"	NA	NA	"moderately"
+"GSM303082"	"Patient 087 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"60"	NA	"recurrence"	"867"	"deceased"	NA	NA	"moderately"
+"GSM303083"	"Patient 088 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"53"	NA	"recurrence"	"304"	"deceased"	NA	NA	"poorly"
+"GSM303084"	"Patient 089 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"51"	NA	"recurrence"	"906"	"deceased"	NA	NA	"poorly"
+"GSM303085"	"Patient 090 with adenocarcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"ad"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"74"	NA	"recurrence"	"477"	"deceased"	NA	NA	"poorly"
+"GSM303086"	"Patient 001 with adenocarcinoma AS001"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"as"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"71"	NA	"recurrence"	"1425"	"deceased"	NA	NA	NA
+"GSM303087"	"Patient 002 with adenocarcinoma AS002"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"as"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"71"	NA	"recurrence"	"309"	"deceased"	NA	NA	NA
+"GSM303088"	"Patient 003 with adenocarcinoma AS003"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"as"	NA	NA	NA	NA	NA	NA	NA	"mut"	"y"	NA	NA	NA	NA	NA	"n"	"y"	NA	"52"	NA	"recurrence"	"2428"	"deceased"	NA	NA	NA
+"GSM303089"	"Patient 004 with adenocarcinoma AS004"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"as"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"73"	NA	"norecurrence"	"3066"	"living"	NA	NA	NA
+"GSM303090"	"Patient 001 with large-cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"la"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"68"	NA	"norecurrence"	"3263"	"living"	NA	NA	NA
+"GSM303091"	"Patient 002 with large-cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"la"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"69"	NA	"norecurrence"	"3238"	"living"	NA	NA	NA
+"GSM303092"	"Patient 003 with large-cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"la"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"76"	NA	"norecurrence"	"75"	"deceased"	NA	NA	NA
+"GSM303093"	"Patient 004 with large-cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"la"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"63"	NA	"recurrence"	"198"	"deceased"	NA	NA	NA
+"GSM303094"	"Patient 005 with large-cell carcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"la"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"46"	NA	"recurrence"	"660"	"deceased"	NA	NA	NA
+"GSM303095"	"Patient 006 with large-cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"la"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"63"	NA	"recurrence"	"422"	"deceased"	NA	NA	NA
+"GSM303096"	"Patient 007 with large-cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"la"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"52"	NA	"norecurrence"	"2713"	"living"	NA	NA	NA
+"GSM303097"	"Patient 008 with large-cell carcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"la"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"64"	NA	"recurrence"	"297"	"deceased"	NA	NA	NA
+"GSM303098"	"Patient 009 with large-cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"la"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"68"	NA	"recurrence"	"127"	"deceased"	NA	NA	NA
+"GSM303099"	"Patient 010 with large-cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"la"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"41"	NA	"norecurrence"	"2712"	"living"	NA	NA	NA
+"GSM303100"	"Patient 011 with large-cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"la"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"43"	NA	"norecurrence"	"2681"	"living"	NA	NA	NA
+"GSM303101"	"Patient 012 with large-cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"la"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"60"	NA	"recurrence"	"134"	"deceased"	NA	NA	NA
+"GSM303102"	"Patient 013 with large-cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"la"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"72"	NA	"norecurrence"	"1454"	"deceased"	NA	NA	NA
+"GSM303103"	"Patient 014 with large-cell carcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"la"	NA	NA	NA	NA	NA	NA	NA	"mut"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"56"	NA	"recurrence"	"2688"	"living"	NA	NA	NA
+"GSM303104"	"Patient 015 with large-cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"la"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"52"	NA	"norecurrence"	"2521"	"living"	NA	NA	NA
+"GSM303105"	"Patient 016 with large-cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"la"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	"46"	NA	"recurrence"	"374"	"deceased"	NA	NA	NA
+"GSM303106"	"Patient 017 with large-cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"la"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"71"	NA	"norecurrence"	"2634"	"living"	NA	NA	NA
+"GSM303107"	"Patient 018 with large-cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"la"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"77"	NA	"norecurrence"	"2353"	"living"	NA	NA	NA
+"GSM303108"	"Patient 001 with large cell neuroendocrine carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"lcnec"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"y"	"y"	NA	"71"	NA	"recurrence"	"229"	"deceased"	NA	NA	NA
+"GSM303109"	"Patient 002 with large cell neuroendocrine carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"lcnec"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"69"	NA	"recurrence"	"790"	"deceased"	NA	NA	NA
+"GSM303110"	"Patient 001 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"74"	NA	"norecurrence"	"3429"	"living"	NA	NA	NA
+"GSM303111"	"Patient 002 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"61"	NA	"norecurrence"	"3596"	"living"	NA	NA	NA
+"GSM303112"	"Patient 003 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"63"	NA	"recurrence"	"220"	"deceased"	NA	NA	NA
+"GSM303113"	"Patient 004 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"55"	NA	"recurrence"	"1565"	"deceased"	NA	NA	NA
+"GSM303114"	"Patient 005 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"75"	NA	"norecurrence"	"2196"	"deceased"	NA	NA	NA
+"GSM303115"	"Patient 006 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"65"	NA	"norecurrence"	"2818"	"living"	NA	NA	NA
+"GSM303116"	"Patient 007 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"61"	NA	"norecurrence"	"3282"	"living"	NA	NA	NA
+"GSM303117"	"Patient 008 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"58"	NA	"recurrence"	"3238"	"living"	NA	NA	NA
+"GSM303118"	"Patient 009 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"75"	NA	"recurrence"	"764"	"deceased"	NA	NA	NA
+"GSM303119"	"Patient 010 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"62"	NA	"recurrence"	"2998"	"living"	NA	NA	NA
+"GSM303120"	"Patient 011 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"57"	NA	"recurrence"	"1554"	"deceased"	NA	NA	NA
+"GSM303121"	"Patient 012 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"59"	NA	"recurrence"	"232"	"deceased"	NA	NA	NA
+"GSM303122"	"Patient 013 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"63"	NA	"norecurrence"	"2823"	"living"	NA	NA	NA
+"GSM303123"	"Patient 014 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"58"	NA	"recurrence"	"2888"	"living"	NA	NA	NA
+"GSM303124"	"Patient 015 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"67"	NA	"recurrence"	"933"	"deceased"	NA	NA	NA
+"GSM303125"	"Patient 016 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"63"	NA	"recurrence"	"445"	"deceased"	NA	NA	NA
+"GSM303126"	"Patient 017 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"55"	NA	"norecurrence"	"2910"	"living"	NA	NA	NA
+"GSM303127"	"Patient 018 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"58"	NA	"norecurrence"	"2886"	"living"	NA	NA	NA
+"GSM303128"	"Patient 019 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"47"	NA	"norecurrence"	"2718"	"living"	NA	NA	NA
+"GSM303129"	"Patient 020 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"f"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"46"	NA	"recurrence"	"888"	"deceased"	NA	NA	NA
+"GSM303130"	"Patient 021 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"70"	NA	"norecurrence"	"2705"	"living"	NA	NA	NA
+"GSM303131"	"Patient 022 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"72"	NA	"recurrence"	"2546"	"deceased"	NA	NA	NA
+"GSM303132"	"Patient 023 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"64"	NA	"recurrence"	"1463"	"deceased"	NA	NA	NA
+"GSM303133"	"Patient 024 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"77"	NA	"recurrence"	"139"	"deceased"	NA	NA	NA
+"GSM303134"	"Patient 025 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"75"	NA	"norecurrence"	"2513"	"living"	NA	NA	NA
+"GSM303135"	"Patient 026 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"69"	NA	"recurrence"	"2528"	"deceased"	NA	NA	NA
+"GSM303136"	"Patient 027 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"72"	NA	"norecurrence"	"25"	"deceased"	NA	NA	NA
+"GSM303137"	"Patient 028 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"68"	NA	"norecurrence"	"25"	"deceased"	NA	NA	NA
+"GSM303138"	"Patient 029 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	"72"	NA	"norecurrence"	"2533"	"living"	NA	NA	NA
+"GSM303139"	"Patient 030 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"79"	NA	"norecurrence"	"2358"	"living"	NA	NA	NA
+"GSM303140"	"Patient 031 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"76"	NA	NA	"288"	"deceased"	NA	NA	NA
+"GSM303141"	"Patient 032 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	"y"	NA	NA	NA	NA	NA	"n"	"n"	NA	"73"	NA	"recurrence"	"1862"	"deceased"	NA	NA	NA
+"GSM303142"	"Patient 033 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"72"	NA	"recurrence"	"683"	"deceased"	NA	NA	NA
+"GSM303143"	"Patient 034 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"56"	NA	"recurrence"	"683"	"deceased"	NA	NA	NA
+"GSM303144"	"Patient 035 with squamous cell carcinoma"	NA	"tumor"	NA	"lung"	"m"	NA	NA	NA	"sq"	NA	NA	NA	NA	NA	NA	NA	"wt"	NA	NA	NA	NA	NA	NA	"n"	"y"	NA	"73"	NA	"recurrence"	"795"	"deceased"	NA	NA	NA
+"GSM303145"	"Patient 01 with small cell lung cancer"	NA	"tumor"	NA	"lung"	"Sex: NA"	NA	NA	NA	"sclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM303146"	"Patient 02 with small cell lung cancer"	NA	"tumor"	NA	"lung"	"Sex: NA"	NA	NA	NA	"sclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM303147"	"Patient 03 with small cell lung cancer"	NA	"tumor"	NA	"lung"	"Sex: NA"	NA	NA	NA	"sclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM303148"	"Patient 04 with small cell lung cancer"	NA	"tumor"	NA	"lung"	"Sex: NA"	NA	NA	NA	"sclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM303149"	"Patient 05 with small cell lung cancer"	NA	"tumor"	NA	"lung"	"Sex: NA"	NA	NA	NA	"sclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM303150"	"Patient 06 with small cell lung cancer"	NA	"tumor"	NA	"lung"	"Sex: NA"	NA	NA	NA	"sclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM303151"	"Patient 07 with small cell lung cancer"	NA	"tumor"	NA	"lung"	"Sex: NA"	NA	NA	NA	"sclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM303152"	"Patient 08 with small cell lung cancer"	NA	"tumor"	NA	"lung"	"Sex: NA"	NA	NA	NA	"sclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM303153"	"Patient 09 with small cell lung cancer"	NA	"tumor"	NA	"lung"	"Sex: NA"	NA	NA	NA	"sclc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM303154"	"Mixture of normal tissue from 5 different patients, mixture no.1"	NA	"healthy"	NA	"lung"	"Sex: NA"	NA	NA	NA	"normal"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM303155"	"Mixture of normal tissue from 5 different patients, mixture no.2"	NA	"healthy"	NA	"lung"	"Sex: NA"	NA	NA	NA	"normal"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM303156"	"Mixture of normal tissue from 5 different patients, mixture no.3"	NA	"healthy"	NA	"lung"	"Sex: NA"	NA	NA	NA	"normal"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM303157"	"Mixture of normal tissue from 5 different patients, mixture no.4"	NA	"healthy"	NA	"lung"	"Sex: NA"	NA	NA	NA	"normal"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM303158"	"Mixture of normal tissue from 5 different patients, mixture no.5"	NA	"healthy"	NA	"lung"	"Sex: NA"	NA	NA	NA	"normal"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA

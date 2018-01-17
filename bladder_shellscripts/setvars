@@ -1,0 +1,14 @@
+REXEC=`which R`
+# get the most recent pipeline code
+OVHOME=`pwd | sed -e 's|/catd/bladder_shellscripts|/curatedovariandata|'`
+SRCHOME=$OVHOME/src
+# but then work here in this catd directory
+OVHOME=`pwd | sed -e 's|/bladder_shellscripts||'`
+DATAHOME=$OVHOME/DATA
+CURATIONHOME=$OVHOME/curation/bladder
+CURATIONSRC=$CURATIONHOME/src
+UNCURATED=$CURATIONHOME/uncurated
+CURATED=$CURATIONHOME/curated
+QC=$OVHOME/qualitycontrol
+LOG=$OVHOME/LOG
+

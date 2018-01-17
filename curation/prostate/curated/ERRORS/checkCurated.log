@@ -1,0 +1,1611 @@
+
+R version 2.12.1 (2010-12-16)
+Copyright (C) 2010 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+Platform: x86_64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> ## R CMD BATCH --vanilla checkCurated.R ../curated/ERRORS/checkCurated.log
+> 
+> source("../../functions.R")
+> curated.dir <- "../curated"
+> output.dir <- paste(curated.dir,"/ERRORS",sep="")
+> present.dir <- getwd()
+> 
+> if(!file.exists(output.dir)) dir.create(output.dir,recursive=TRUE)
+> 
+> ##the template to use
+> template <- read.csv(paste(present.dir,"/Prostate_Draft_Template_June_1_2011.csv",sep=""),as.is=TRUE)
+> 
+> ##the list of filenames to check
+> files <- dir(curated.dir,pattern="\\.txt$")
+> 
+> ##Create a checklist for three checks in all files
+> checklist <- matrix(NA,ncol=2,nrow=length(files))
+> colnames(checklist) <- c("column.names","variable.regex.checks")
+> rownames(checklist) <- files
+> 
+> ##-------------------------------------------------
+> ##check that the column names match the template
+> ##-------------------------------------------------
+> for (i in 1:length(files)){
++   print(paste("Checking column names in",files[i]))
++   curated <- read.delim(paste(curated.dir,files[i],sep="/"),as.is=TRUE)
++   ##check column names
++   if(identical(all.equal(colnames(curated),template$col.name),TRUE)){
++     print("column names OK")
++     checklist[i,"column.names"] <- TRUE
++   }else{
++     all.equal(colnames(curated),template$col.name)
++     print("Column names should be: ")
++     print(template$col.name)
++     print("Column names are: ")
++     print(colnames(curated))
++     checklist[i,"column.names"] <- FALSE
++   }
++ }
+[1] "Checking column names in GSE10645-GPL5858__series_matrix-1.txt.gz_curated_pdata.txt"
+[1] "Column names should be: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation"                   "capsule"                            
+[33] "fusion"                              "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "source_type"                         "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Column names are: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation."                  "capsule."                           
+[33] "fusion."                             "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "sample_type.1"                       "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Checking column names in GSE10645-GPL5858__series_matrix-2.txt.gz_curated_pdata.txt"
+[1] "Column names should be: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation"                   "capsule"                            
+[33] "fusion"                              "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "source_type"                         "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Column names are: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation."                  "capsule."                           
+[33] "fusion."                             "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "sample_type.1"                       "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Checking column names in GSE10645-GPL5858__series_matrix-3.txt.gz_curated_pdata.txt"
+[1] "Column names should be: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation"                   "capsule"                            
+[33] "fusion"                              "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "source_type"                         "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Column names are: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation."                  "capsule."                           
+[33] "fusion."                             "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "sample_type.1"                       "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Checking column names in GSE10645-GPL5873__series_matrix-1.txt.gz_curated_pdata.txt"
+[1] "Column names should be: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation"                   "capsule"                            
+[33] "fusion"                              "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "source_type"                         "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Column names are: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation."                  "capsule."                           
+[33] "fusion."                             "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "sample_type.1"                       "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Checking column names in GSE10645-GPL5873__series_matrix-2.txt.gz_curated_pdata.txt"
+[1] "Column names should be: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation"                   "capsule"                            
+[33] "fusion"                              "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "source_type"                         "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Column names are: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation."                  "capsule."                           
+[33] "fusion."                             "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "sample_type.1"                       "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Checking column names in GSE10645-GPL5873__series_matrix-3.txt.gz_curated_pdata.txt"
+[1] "Column names should be: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation"                   "capsule"                            
+[33] "fusion"                              "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "source_type"                         "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Column names are: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation."                  "capsule."                           
+[33] "fusion."                             "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "sample_type.1"                       "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Checking column names in GSE16560_curated_pdata.txt"
+[1] "Column names should be: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation"                   "capsule"                            
+[33] "fusion"                              "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "source_type"                         "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Column names are: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation."                  "capsule."                           
+[33] "fusion."                             "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "sample_type.1"                       "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[45] "fusion"                             
+[1] "Checking column names in GSE18655_curated_pdata.txt"
+[1] "Column names should be: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation"                   "capsule"                            
+[33] "fusion"                              "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "source_type"                         "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Column names are: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation."                  "capsule."                           
+[33] "fusion."                             "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "sample_type.1"                       "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Checking column names in GSE21032-GPL10264_curated_pdata.txt"
+[1] "Column names should be: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation"                   "capsule"                            
+[33] "fusion"                              "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "source_type"                         "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Column names are: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation."                  "capsule."                           
+[33] "fusion."                             "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "sample_type.1"                       "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Checking column names in GSE21032-GPL5188_curated_pdata.txt"
+[1] "Column names should be: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation"                   "capsule"                            
+[33] "fusion"                              "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "source_type"                         "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Column names are: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation."                  "capsule."                           
+[33] "fusion."                             "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "sample_type.1"                       "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Checking column names in GSE21032-GPL8227_curated_pdata.txt"
+[1] "Column names should be: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation"                   "capsule"                            
+[33] "fusion"                              "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "source_type"                         "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Column names are: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation."                  "capsule."                           
+[33] "fusion."                             "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "sample_type.1"                       "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Checking column names in GSE21034-GPL10264_curated_pdata.txt"
+[1] "Column names should be: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation"                   "capsule"                            
+[33] "fusion"                              "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "source_type"                         "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Column names are: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation."                  "capsule."                           
+[33] "fusion."                             "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "sample_type.1"                       "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Checking column names in GSE21034-GPL5188_curated_pdata.txt"
+[1] "Column names should be: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation"                   "capsule"                            
+[33] "fusion"                              "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "source_type"                         "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Column names are: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation."                  "capsule."                           
+[33] "fusion."                             "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "sample_type.1"                       "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Checking column names in GSE23022_curated_pdata.txt"
+[1] "Column names should be: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation"                   "capsule"                            
+[33] "fusion"                              "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "source_type"                         "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Column names are: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation."                  "capsule."                           
+[33] "fusion."                             "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "sample_type.1"                       "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Checking column names in GSE25136_curated_pdata.txt"
+[1] "Column names should be: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation"                   "capsule"                            
+[33] "fusion"                              "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "source_type"                         "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Column names are: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation."                  "capsule."                           
+[33] "fusion."                             "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "sample_type.1"                       "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Checking column names in GSE26126_curated_pdata.txt"
+[1] "Column names should be: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation"                   "capsule"                            
+[33] "fusion"                              "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "source_type"                         "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Column names are: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation."                  "capsule."                           
+[33] "fusion."                             "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "sample_type.1"                       "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[45] "days_to_recurrence"                 
+[1] "Checking column names in GSE5377_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE6606-GPL8300_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE6606-GPL92_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE6606-GPL93_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE6919-GPL8300_curated_pdata.txt"
+[1] "Column names should be: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation"                   "capsule"                            
+[33] "fusion"                              "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "source_type"                         "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Column names are: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation."                  "capsule."                           
+[33] "fusion."                             "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "sample_type.1"                       "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Checking column names in GSE6919-GPL92_curated_pdata.txt"
+[1] "Column names should be: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation"                   "capsule"                            
+[33] "fusion"                              "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "source_type"                         "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Column names are: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation."                  "capsule."                           
+[33] "fusion."                             "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "sample_type.1"                       "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Checking column names in GSE6919-GPL93_curated_pdata.txt"
+[1] "Column names should be: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation"                   "capsule"                            
+[33] "fusion"                              "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "source_type"                         "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Column names are: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation."                  "capsule."                           
+[33] "fusion."                             "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "sample_type.1"                       "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Checking column names in GSE6956_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE7055-GPL4700_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE7055-GPL571_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE7949_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE8126_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE8402_curated_pdata.txt"
+[1] "Column names should be: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation"                   "capsule"                            
+[33] "fusion"                              "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "source_type"                         "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Column names are: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation."                  "capsule."                           
+[33] "fusion."                             "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "sample_type.1"                       "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[45] "fusion"                             
+[1] "Checking column names in GSE8511_curated_pdata.txt"
+[1] "Column names should be: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation"                   "capsule"                            
+[33] "fusion"                              "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "source_type"                         "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Column names are: "
+ [1] "sample_name"                         "alt_sample_name"                    
+ [3] "sample_type"                         "T"                                  
+ [5] "substage"                            "T_clinical"                         
+ [7] "substage_clinical"                   "overall_stage_clinical"             
+ [9] "overall_stage_pathological"          "gleasongrade"                       
+[11] "summarygrade"                        "age_at_initial_pathologic_diagnosis"
+[13] "days_to_tumor_recurrence"            "recurrence_status"                  
+[15] "recurrence_based_on_psa_only"        "days_to_recurrence_or_death"        
+[17] "dfs_status"                          "cancer_specific_death"              
+[19] "psa_at_diagnosis"                    "psa_rising"                         
+[21] "days_to_death"                       "vital_status"                       
+[23] "os_binary"                           "relapse_binary"                     
+[25] "race"                                "smokingstatus"                      
+[27] "extraprostatic_extension"            "perineural_invasion"                
+[29] "seminal_vesicle_invasion"            "angiolymphatic_invasion"            
+[31] "androgen_ablation."                  "capsule."                           
+[33] "fusion."                             "tumor_margins_positive"             
+[35] "therapy_radiation_initial"           "therapy_radiation_salvage"          
+[37] "therapy_surgery_initial"             "therapy_hormonal_initial"           
+[39] "sample_type.1"                       "high_grade_PIN"                     
+[41] "M"                                   "M_detail"                           
+[43] "M_at_surgery"                        "M_at_surgery_detail"                
+[1] "Checking column names in GSE9347_curated_pdata.txt"
+[1] "column names OK"
+> 
+> ##-------------------------------------------------
+> ##construct the regexes from template$allowedvalues
+> ##-------------------------------------------------
+> regexes <- template$allowedvalues
+> regexes <- paste("^",regexes,"$",sep="")
+> regexes <- gsub("|","$|^",regexes,fixed=TRUE)
+> ##regexes[template$requiredness=="optional"] <- paste(regexes[template$requiredness=="optional"],"|^NA$",sep="")
+> regexes[grep("^*$",regexes,fixed=TRUE)] <- "."
+> names(regexes) <- template$col.name
+> regexes[grep("decimal",regexes)] <- "^[0-9]+\\.?[0-9]*$"
+> 
+> ##remove previously existing regexerrors files
+> unlink(paste(output.dir,"/regexerrors*.txt",sep=""))
+> 
+> ##-------------------------------------------------
+> ##Check the data entries in each column for regex
+> ## matching, uniqueness, and missingness
+> ##-------------------------------------------------
+> for (i in which(checklist[,"column.names"])){
++   print(paste("Checking regexes in",files[i]))
++   curated <- read.delim(paste(curated.dir,files[i],sep="/"),as.is=TRUE)
++   ##check column names
++   column.OK <- rep(NA,ncol(curated))
++   names(column.OK) <- colnames(curated)
++   for(j in 1:ncol(curated)){
++     doesmatch <- grep(regexes[j],curated[,j])
++     if(template[j,"requiredness"]=="optional"){
++       doesmatch <- c(doesmatch,which(is.na(curated[,j])))
++     }
++     doesnotmatch <- 1:nrow(curated)
++     doesnotmatch <- doesnotmatch[!doesnotmatch %in% doesmatch]
++     ## if field must be unique, add non-unique values to doesnotmatch
++     if(template[j,"uniqueness"]=="unique"){
++       counts.table <- table(curated[,j])
++       counts <- counts.table[match(curated[,j],names(counts.table))]  #this counts the occurences
++       counts[is.na(counts)] <- 1  ##Consider NAs to be unique
++       nonunique <- which(counts>1)
++       doesnotmatch <- c(doesnotmatch,nonunique)
++       doesnotmatch <- unique(doesnotmatch)  #don't duplicate fields which fail both tests
++     }
++     if(length(doesnotmatch)==0){
++       column.OK[j] <- TRUE
++     }else{
++       column.OK[j] <- FALSE
++       curated[doesnotmatch,j] <- paste("!!!",curated[doesnotmatch,j],"!!!",sep="")
++     }
++   }
++   if(all(column.OK)){
++     print("all regex checks OK")
++     checklist[i,"variable.regex.checks"] <- TRUE
++   }else{
++     print(paste("The following columns failed the regex check for ",files[i],":",sep=""))
++     print(names(column.OK)[!column.OK])
++     print(curated[,!column.OK])
++     write.table(curated[,!column.OK],paste(output.dir,"/regexerrors_",files[i],sep=""))
++     checklist[i,"variable.regex.checks"] <- FALSE
++   }
++ }
+[1] "Checking regexes in GSE5377_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in GSE6606-GPL8300_curated_pdata.txt"
+[1] "The following columns failed the regex check for GSE6606-GPL8300_curated_pdata.txt:"
+[1] "substage"                   "overall_stage_pathological"
+   substage overall_stage_pathological
+1         b                         3b
+2         b                         2b
+3         b                         2b
+4         a                         3a
+5         b                         3b
+6         a                         3a
+7         a                         3a
+8         a                   !!!4a!!!
+9         b                         2b
+10        a                         3a
+11        b                         3b
+12        b                         3b
+13        a                         3a
+14        a                         2a
+15        b                         2b
+16        b                         2b
+17        a                         3a
+18        b                         2b
+19        a                         3a
+20        b                         2b
+21        a                         3a
+22        a                         3a
+23        b                         2b
+24        a                         3a
+25        b                         2b
+26        a                         2a
+27        b                         3b
+28        b                         3b
+29        b                         3b
+30        b                         2b
+31        a                         3a
+32        b                         2b
+33        a                         3a
+34        a                         3a
+35        a                         3a
+36        a                         3a
+37        b                         2b
+38        b                         2b
+39        b                         2b
+40   !!!!!!                          4
+41        a                         3a
+42        b                         2b
+43        b                         3b
+44        b                         2b
+45        b                         3b
+46        b                         2b
+47        a                         3a
+48        b                         2b
+49        a                         3a
+50        b                         2b
+51        b                         2b
+52        b                         3b
+53        a                         3a
+54        b                         2b
+55        b                         3b
+56        a                         3a
+57        a                         3a
+58        a                         3a
+59        b                         2b
+60        a                         3a
+61        a                         3a
+62        a                         2a
+63        a                         3a
+64        b                         2b
+65        a                         3a
+[1] "Checking regexes in GSE6606-GPL92_curated_pdata.txt"
+[1] "The following columns failed the regex check for GSE6606-GPL92_curated_pdata.txt:"
+[1] "substage"                   "overall_stage_pathological"
+   substage overall_stage_pathological
+1         b                         3b
+2         b                         2b
+3         b                         2b
+4         b                         2b
+5         a                         3a
+6         a                         3a
+7         b                         3b
+8         a                         3a
+9         a                         3a
+10        a                   !!!4a!!!
+11        b                         2b
+12        a                         3a
+13        b                         3b
+14        b                         3b
+15        a                         3a
+16        a                         2a
+17        b                         2b
+18        b                         2b
+19        a                         3a
+20        b                         2b
+21        a                         3a
+22        b                         2b
+23        a                         3a
+24        a                         3a
+25        b                         2b
+26        a                         3a
+27        b                         2b
+28        a                         2a
+29        b                         3b
+30        b                         3b
+31        b                         3b
+32        b                         2b
+33        a                         3a
+34        b                         2b
+35        a                         3a
+36        a                         3a
+37        a                         3a
+38        a                         3a
+39        b                         2b
+40        b                         2b
+41        b                         2b
+42   !!!!!!                          4
+43        a                         3a
+44        b                         2b
+45        b                         3b
+46        b                         2b
+47        b                         3b
+48        b                         2b
+49        a                         3a
+50        b                         2b
+51        a                         3a
+52        b                         2b
+53        b                         3b
+54        a                         3a
+55        b                         2b
+56        b                         3b
+57        a                         3a
+58        a                         3a
+59        a                         3a
+60        b                         2b
+61        a                         3a
+62        a                         3a
+63        a                         2a
+64        a                         3a
+65        b                         2b
+66        a                         3a
+[1] "Checking regexes in GSE6606-GPL93_curated_pdata.txt"
+[1] "The following columns failed the regex check for GSE6606-GPL93_curated_pdata.txt:"
+[1] "substage"                   "overall_stage_pathological"
+   substage overall_stage_pathological
+1         b                         3b
+2         b                         2b
+3         b                         2b
+4         b                         2b
+5         a                         3a
+6         a                         3a
+7         b                         3b
+8         a                         3a
+9         a                         3a
+10        a                   !!!4a!!!
+11        b                         2b
+12        a                         3a
+13        b                         3b
+14        b                         3b
+15        a                         3a
+16        a                         2a
+17        b                         2b
+18        b                         2b
+19        a                         3a
+20        b                         2b
+21        a                         3a
+22        b                         2b
+23        a                         3a
+24        a                         3a
+25        b                         2b
+26        a                         3a
+27        b                         2b
+28        a                         2a
+29        b                         3b
+30        b                         3b
+31        b                         3b
+32        b                         2b
+33        a                         3a
+34        b                         2b
+35        a                         3a
+36        a                         3a
+37        a                         3a
+38        a                         3a
+39        b                         2b
+40        b                         2b
+41        b                         2b
+42   !!!!!!                          4
+43        a                         3a
+44        b                         2b
+45        b                         3b
+46        b                         2b
+47        b                         3b
+48        b                         2b
+49        a                         3a
+50        b                         2b
+51        a                         3a
+52        b                         2b
+53        b                         3b
+54        a                         3a
+55        b                         2b
+56        b                         3b
+57        a                         3a
+58        a                         3a
+59        a                         3a
+60        b                         2b
+61        a                         3a
+62        a                         2a
+63        a                         3a
+64        b                         2b
+65        a                         3a
+[1] "Checking regexes in GSE6956_curated_pdata.txt"
+[1] "The following columns failed the regex check for GSE6956_curated_pdata.txt:"
+[1] "summarygrade"           "tumor_margins_positive"
+   summarygrade
+1  intermediate
+2           low
+3           low
+4  intermediate
+5  intermediate
+6  intermediate
+7  intermediate
+8  intermediate
+9           low
+10 intermediate
+11 intermediate
+12          low
+13          low
+14          low
+15          low
+16 intermediate
+17 intermediate
+18 intermediate
+19 intermediate
+20 intermediate
+21          low
+22 intermediate
+23         high
+24          low
+25          low
+26 intermediate
+27 intermediate
+28 intermediate
+29 intermediate
+30 intermediate
+31         high
+32 intermediate
+33 intermediate
+34 intermediate
+35 intermediate
+36 intermediate
+37 intermediate
+38 intermediate
+39 intermediate
+40 intermediate
+41 intermediate
+42         high
+43 intermediate
+44 intermediate
+45 intermediate
+46          low
+47 intermediate
+48 intermediate
+49          low
+50          low
+51 intermediate
+52 intermediate
+53 intermediate
+54 intermediate
+55 intermediate
+56 intermediate
+57 intermediate
+58 intermediate
+59 intermediate
+60          low
+61          low
+62 intermediate
+63 intermediate
+64 intermediate
+65          low
+66          low
+67          low
+68          low
+69          low
+70          low
+71 intermediate
+72 intermediate
+73 intermediate
+74 intermediate
+75          low
+76       !!!!!!
+77       !!!!!!
+78       !!!!!!
+79          low
+80 intermediate
+81 intermediate
+82          low
+83 intermediate
+84 intermediate
+85 intermediate
+86 intermediate
+87 intermediate
+88 intermediate
+89 intermediate
+                                                                                                                                                                                                                      tumor_margins_positive
+1                                                                                                                                                                                                                                       <NA>
+2                                                                                                                                                                                                                                          n
+3                                                                                                                                                                                                                                          y
+4                                                                                                                                                                                                                                          y
+5                                                                                                                                                                                                                                          y
+6                                                                                                                                                                                                                                          n
+7                                                                                                                                                                                                                                          y
+8                                                                                                                                                                                                                                          y
+9                                                                                                                                                                                                                                          y
+10                                                                                                                                                                                                                                         y
+11                                                                                                                                                                                                                                         n
+12                                                                                                                                                                                                                                         y
+13                                                                                                                                                                                                                                         n
+14                                                                                                                                                                                                                                         y
+15                                                                                                                                                                                                                                         n
+16                                                                                                                                                                                                                                         n
+17                                                                                                                                                                                                                                         n
+18                                                                                                                                                                                                                                         y
+19                                                                                                                                                                                                                                         n
+20                                                                                                                                                                                                                                         y
+21                                                                                                                                                                                                                                         n
+22                                                                                                                                                                                                                                         n
+23                                                                                                                                                                                                                                         y
+24                                                                                                                                                                                                                                         n
+25                                                                                                                                                                                                                                         n
+26                                                                                                                                                                                                                                         n
+27                                                                                                                                                                                                                                         n
+28                                                                                                                                                                                                                                         n
+29                                                                                                                                                                                                                                         n
+30                                                                                                                                                                                                                                         n
+31                                                                                                                                                                                                                                         y
+32                                                                                                                                                                                                                                         n
+33                                                                                                                                                                                                                                         y
+34                                                                                                                                                                                                                                         n
+35                                                                                                                                                                                                                                         n
+36                                                                                                                                                                                                                                         n
+37                                                                                                                                                                                                                                         y
+38                                                                                                                                                                                                                                         n
+39                                                                                                                                                                                                                                         y
+40                                                                                                                                                                                                                                         y
+41                                                                                                                                                                                                                                         n
+42                                                                                                                                                                                                                                         y
+43                                                                                                                                                                                                                                         n
+44                                                                                                                                                                                                                                         n
+45                                                                                                                                                                                                                                         n
+46                                                                                                                                                                                                                                         n
+47                                                                                                                                                                                                                                         n
+48                                                                                                                                                                                                                                         y
+49                                                                                                                                                                                                                                         n
+50                                                                                                                                                                                                                                         n
+51                                                                                                                                                                                                                                         y
+52                                                                                                                                                                                                                                         n
+53                                                                                                                                                                                                                                         y
+54                                                                                                                                                                                                                                         n
+55                                                                                                                                                                                                                                         n
+56                                                                                                                                                                                                                                         y
+57                                                                                                                                                                                                                                         n
+58                                                                                                                                                                                                                                         y
+59                                                                                                                                                                                                                                         y
+60                                                                                                                                                                                                                                         y
+61                                                                                                                                                                                                                                         y
+62                                                                                                                                                                                                                                         n
+63                                                                                                                                                                                                                                         n
+64                                                                                                                                                                                                                                         y
+65                                                                                                                                                                                                                                         n
+66                                                                                                                                                                                                                                         n
+67            !!!Race: Caucasian, Smoking Status: Never, Gleason Sum: 5, PT Stage: 2, Extraprostatic Extension: NA, Perineural Invasion: NA, Seminal vesicle invasion: NA, Are Surgical margins involved: NA, Angio lymphatic invasion:NA!!!
+68            !!!Race: Caucasian, Smoking Status: Never, Gleason Sum: 5, PT Stage: 2, Extraprostatic Extension: NA, Perineural Invasion: NA, Seminal vesicle invasion: NA, Are Surgical margins involved: NA, Angio lymphatic invasion:NA!!!
+69                                                                                                                                                                                                                                         n
+70                                                                                                                                                                                                                                         n
+71                                                                                                                                                                                                                                         n
+72                                                                                                                                                                                                                                         n
+73                                                                                                                                                                                                                                         n
+74                                                                                                                                                                                                                                         n
+75                                                                                                                                                                                                                                         n
+76                  !!!Race: NA, Smoking Status: NA, Gleason Sum: NA, PT Stage: NA, Extraprostatic Extension: NA, Perineural Invasion: NA, Seminal vesicle invasion: NA, Are Surgical margins involved: NA, Angio lymphatic invasion: NA !!!
+77                  !!!Race: NA, Smoking Status: NA, Gleason Sum: NA, PT Stage: NA, Extraprostatic Extension: NA, Perineural Invasion: NA, Seminal vesicle invasion: NA, Are Surgical margins involved: NA, Angio lymphatic invasion: NA !!!
+78                                                                                                                                                                                                                                      <NA>
+79 !!!Race: African American, Smoking Status: Never, Gleason Sum: 6, PT Stage: 2, Extraprostatic Extension: None, Perineural Invasion: No, Seminal vesicle invasion: No, Are Surgical margins involved: NA, Angio lymphatic invasion: No !!!
+80                                                                                                                                                                                                                                         n
+81                                                                                                                                                                                                                                         n
+82                                                                                                                                                                                                                                         n
+83                                                                                                                                                                                                                                         n
+84                                                                                                                                                                                                                                         n
+85                                                                                                                                                                                                                                         n
+86                                                                                                                                                                                                                                         n
+87                                                                                                                                                                                                                                         y
+88                                                                                                                                                                                                                                         n
+89                                                                                                                                                                                                                                         y
+[1] "Checking regexes in GSE7055-GPL4700_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in GSE7055-GPL571_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in GSE7949_curated_pdata.txt"
+[1] "The following columns failed the regex check for GSE7949_curated_pdata.txt:"
+[1] "gleasongrade"
+ [1] "!!!4+3!!!" "!!!3+4!!!" "6"         "8"         "5"         "!!!3+4!!!"
+ [7] "8"         "!!!4+3!!!" "!!!3+4!!!" "!!!4+3!!!" "7"         "!!!4+3!!!"
+[13] "8"         "!!!3+4!!!" "!!!4+3!!!" "!!!4+3!!!" "!!!3+4!!!" "4"        
+[19] "6"         "5"         "!!!3+4!!!"
+[1] "Checking regexes in GSE8126_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in GSE9347_curated_pdata.txt"
+[1] "The following columns failed the regex check for GSE9347_curated_pdata.txt:"
+[1] "gleasongrade"
+ [1] "!!!3+3!!!" "!!!3+4!!!" "!!!3+4!!!" "!!!3+4!!!" "!!!2+4!!!" "!!!4+5!!!"
+ [7] "!!!4+3!!!" NA          "!!!3+2!!!" "!!!4+3!!!" "!!!3+3!!!" "!!!2+4!!!"
+[13] "!!!3+4!!!" "!!!3+4!!!" "!!!3+4!!!" "!!!3+3!!!"
+> 
+> print(checklist)
+                                                           column.names
+GSE10645-GPL5858__series_matrix-1.txt.gz_curated_pdata.txt        FALSE
+GSE10645-GPL5858__series_matrix-2.txt.gz_curated_pdata.txt        FALSE
+GSE10645-GPL5858__series_matrix-3.txt.gz_curated_pdata.txt        FALSE
+GSE10645-GPL5873__series_matrix-1.txt.gz_curated_pdata.txt        FALSE
+GSE10645-GPL5873__series_matrix-2.txt.gz_curated_pdata.txt        FALSE
+GSE10645-GPL5873__series_matrix-3.txt.gz_curated_pdata.txt        FALSE
+GSE16560_curated_pdata.txt                                        FALSE
+GSE18655_curated_pdata.txt                                        FALSE
+GSE21032-GPL10264_curated_pdata.txt                               FALSE
+GSE21032-GPL5188_curated_pdata.txt                                FALSE
+GSE21032-GPL8227_curated_pdata.txt                                FALSE
+GSE21034-GPL10264_curated_pdata.txt                               FALSE
+GSE21034-GPL5188_curated_pdata.txt                                FALSE
+GSE23022_curated_pdata.txt                                        FALSE
+GSE25136_curated_pdata.txt                                        FALSE
+GSE26126_curated_pdata.txt                                        FALSE
+GSE5377_curated_pdata.txt                                          TRUE
+GSE6606-GPL8300_curated_pdata.txt                                  TRUE
+GSE6606-GPL92_curated_pdata.txt                                    TRUE
+GSE6606-GPL93_curated_pdata.txt                                    TRUE
+GSE6919-GPL8300_curated_pdata.txt                                 FALSE
+GSE6919-GPL92_curated_pdata.txt                                   FALSE
+GSE6919-GPL93_curated_pdata.txt                                   FALSE
+GSE6956_curated_pdata.txt                                          TRUE
+GSE7055-GPL4700_curated_pdata.txt                                  TRUE
+GSE7055-GPL571_curated_pdata.txt                                   TRUE
+GSE7949_curated_pdata.txt                                          TRUE
+GSE8126_curated_pdata.txt                                          TRUE
+GSE8402_curated_pdata.txt                                         FALSE
+GSE8511_curated_pdata.txt                                         FALSE
+GSE9347_curated_pdata.txt                                          TRUE
+                                                           variable.regex.checks
+GSE10645-GPL5858__series_matrix-1.txt.gz_curated_pdata.txt                    NA
+GSE10645-GPL5858__series_matrix-2.txt.gz_curated_pdata.txt                    NA
+GSE10645-GPL5858__series_matrix-3.txt.gz_curated_pdata.txt                    NA
+GSE10645-GPL5873__series_matrix-1.txt.gz_curated_pdata.txt                    NA
+GSE10645-GPL5873__series_matrix-2.txt.gz_curated_pdata.txt                    NA
+GSE10645-GPL5873__series_matrix-3.txt.gz_curated_pdata.txt                    NA
+GSE16560_curated_pdata.txt                                                    NA
+GSE18655_curated_pdata.txt                                                    NA
+GSE21032-GPL10264_curated_pdata.txt                                           NA
+GSE21032-GPL5188_curated_pdata.txt                                            NA
+GSE21032-GPL8227_curated_pdata.txt                                            NA
+GSE21034-GPL10264_curated_pdata.txt                                           NA
+GSE21034-GPL5188_curated_pdata.txt                                            NA
+GSE23022_curated_pdata.txt                                                    NA
+GSE25136_curated_pdata.txt                                                    NA
+GSE26126_curated_pdata.txt                                                    NA
+GSE5377_curated_pdata.txt                                                   TRUE
+GSE6606-GPL8300_curated_pdata.txt                                          FALSE
+GSE6606-GPL92_curated_pdata.txt                                            FALSE
+GSE6606-GPL93_curated_pdata.txt                                            FALSE
+GSE6919-GPL8300_curated_pdata.txt                                             NA
+GSE6919-GPL92_curated_pdata.txt                                               NA
+GSE6919-GPL93_curated_pdata.txt                                               NA
+GSE6956_curated_pdata.txt                                                  FALSE
+GSE7055-GPL4700_curated_pdata.txt                                           TRUE
+GSE7055-GPL571_curated_pdata.txt                                            TRUE
+GSE7949_curated_pdata.txt                                                  FALSE
+GSE8126_curated_pdata.txt                                                   TRUE
+GSE8402_curated_pdata.txt                                                     NA
+GSE8511_curated_pdata.txt                                                     NA
+GSE9347_curated_pdata.txt                                                  FALSE
+> write.table(checklist,paste(output.dir,"checklist.txt",sep="/"))
+> 
+> proc.time()
+   user  system elapsed 
+  0.390   0.080   0.591 

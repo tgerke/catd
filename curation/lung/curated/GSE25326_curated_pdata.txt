@@ -1,0 +1,86 @@
+"sample_name"	"alt_sample_name"	"unique_patient_ID"	"sample_type"	"smoker"	"primarysite"	"gender"	"race"	"packyears"	"bronch_status"	"histology"	"subtype"	"T"	"N"	"M"	"substage"	"side_of_lung"	"received_platinum_based_therapy_with_progression"	"egfr_status"	"gefitinib_treatment"	"summary_grade"	"cause_of_death"	"kras_mutation"	"p53_mutation"	"pik3ca_mutation"	"age_at_initial_pathologic_diagnosis"	"days_to_tumor_recurrence"	"recurrence_status"	"days_to_death"	"vital_status"	"os_binary"	"relapse_binary"
+"GSM623240"	"p1082_NSCLC - adenocarcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	NA	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623241"	"p1323_NSCLC - squamous cell carcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_squa"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623242"	"p1324_NSCLC - large cell carcinoma"	NA	NA	"y"	"lung"	"f"	NA	NA	NA	"nsclc_lcc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623243"	"p1409_NSCLC - squamous cell carcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_squa"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623244"	"p1611_NSCLC - squamous cell carcinoma"	NA	NA	"y"	"lung"	"f"	NA	NA	NA	"nsclc_squa"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"y"	NA	NA	NA	NA	NA	NA	NA
+"GSM623245"	"p1666_NSCLC - squamous cell carcinoma"	NA	NA	"y"	"lung"	"f"	NA	NA	NA	"nsclc_squa"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623246"	"p1706_NSCLC - squamous cell carcinoma"	NA	NA	"y"	"lung"	"f"	NA	NA	NA	"nsclc_squa"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623247"	"p1770_NSCLC - adenocarcinoma"	NA	NA	"n"	"lung"	"f"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623248"	"p1906_NSCLC - squamous cell carcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_squa"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623249"	"p1909_NSCLC - squamous cell carcinoma"	NA	NA	"n"	"lung"	"f"	NA	NA	NA	"nsclc_squa"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623250"	"p1983_NSCLC - squamous cell carcinoma_rep1"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_squa"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623251"	"p1983a_NSCLC - squamous cell carcinoma_rep2"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_squa"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623252"	"p2176_NSCLC - large cell carcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_lcc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623253"	"p2198_NSCLC - adenocarcinoma_rep1"	NA	NA	"n"	"lung"	"f"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623254"	"p2198a_NSCLC - adenocarcinoma_rep2"	NA	NA	"n"	"lung"	"f"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623255"	"p2298_NSCLC - squamous cell carcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_squa"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623256"	"p2569_NSCLC - large cell carcinoma"	NA	NA	"y"	"lung"	"f"	NA	NA	NA	"nsclc_lcc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623257"	"p3298_NSCLC - adenocarcinoma"	NA	NA	"y"	"lung"	"f"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"y"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623258"	"p3660_NSCLC - adenocarcinoma"	NA	NA	"n"	"lung"	"f"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623259"	"p3938_NSCLC - large cell carcinoma"	NA	NA	"y"	"lung"	"f"	NA	NA	NA	"nsclc_lcc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623260"	"p3965_NSCLC - large cell carcinoma"	NA	NA	"y"	"lung"	"f"	NA	NA	NA	"nsclc_lcc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623261"	"p4006_NSCLC - adenocarcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623262"	"p4081_NSCLC - squamous cell carcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_squa"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623263"	"p4125_NSCLC - squamous cell carcinoma"	NA	NA	"y"	"lung"	"f"	NA	NA	NA	"nsclc_squa"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623264"	"p4140_NSCLC - large cell carcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_lcc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623265"	"p4162_NSCLC - large cell carcinoma"	NA	NA	"y"	"lung"	"f"	NA	NA	NA	"nsclc_lcc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623266"	"p4207_NSCLC - squamous cell carcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_squa"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623267"	"p4314_NSCLC - adenocarcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623268"	"p4333_NSCLC - adenocarcinoma"	NA	NA	"n"	"lung"	"m"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623269"	"p4433_NSCLC - adenocarcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623270"	"p4643_NSCLC - squamous cell carcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_squa"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623271"	"p4652_NSCLC - adenocarcinoma"	NA	NA	"y"	"lung"	"f"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623272"	"p4759_NSCLC - adenocarcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623273"	"p4787_NSCLC - squamous cell carcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_squa"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623274"	"p4801a_NSCLC - adenocarcinoma_rep1"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623275"	"p4801b_NSCLC - adenocarcinoma_rep2"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623276"	"P5412_NSCLC - squamous cell carcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_squa"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623277"	"P5443_NSCLC - adenocarcinoma"	NA	NA	"n"	"lung"	"f"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623278"	"p5449_NSCLC - adenocarcinoma"	NA	NA	"n"	"lung"	"f"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623279"	"p5493_NSCLC - squamous cell carcinoma"	NA	NA	"y"	"lung"	"f"	NA	NA	NA	"nsclc_squa"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623280"	"p5570_NSCLC - squamous cell carcinoma"	NA	NA	"n"	"lung"	"m"	NA	NA	NA	"nsclc_squa"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623281"	"p5872_NSCLC - large cell carcinoma"	NA	NA	"n"	"lung"	"f"	NA	NA	NA	"nsclc_lcc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623282"	"p5880_NSCLC - adenocarcinoma"	NA	NA	"n"	"lung"	"f"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623283"	"p5927_NSCLC - large cell carcinoma"	NA	NA	NA	"lung"	""	NA	NA	NA	"nsclc_lcc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM623284"	"p5966_NSCLC - large cell carcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_lcc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623285"	"p6139_NSCLC - adenocarcinoma"	NA	NA	NA	"lung"	""	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM623286"	"p6270_NSCLC - adenocarcinoma"	NA	NA	"y"	"lung"	"f"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623287"	"p6385_NSCLC - squamous cell carcinoma"	NA	NA	"n"	"lung"	"f"	NA	NA	NA	"nsclc_squa"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623288"	"P6621_NSCLC - squamous cell carcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_squa"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623289"	"p6832_NSCLC - adenocarcinoma"	NA	NA	"y"	"lung"	"f"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623290"	"p6899_NSCLC - adenocarcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623291"	"p6930_NSCLC - adenocarcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623292"	"p6977_NSCLC - large cell carcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_lcc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM623293"	"p6988_NSCLC - adenocarcinoma_rep1"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623294"	"p6988a_NSCLC - adenocarcinoma_rep2"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623295"	"p7015_NSCLC - squamous cell carcinoma_rep1"	NA	NA	"y"	"lung"	"f"	NA	NA	NA	"nsclc_squa"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623296"	"p7015a_NSCLC - squamous cell carcinoma_rep2"	NA	NA	"y"	"lung"	"f"	NA	NA	NA	"nsclc_squa"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623297"	"p7041_NSCLC - large cell carcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_lcc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623298"	"p7164_NSCLC - adenocarcinoma"	NA	NA	"n"	"lung"	"m"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623299"	"p7179_NSCLC - squamous cell carcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_squa"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623300"	"p7289_NSCLC - adenocarcinoma"	NA	NA	"y"	"lung"	"f"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623301"	"p7379_NSCLC - adenocarcinoma"	NA	NA	"n"	"lung"	"f"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623302"	"p7381_NSCLC - squamous cell carcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_squa"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623303"	"p7386_NSCLC - squamous cell carcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_squa"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623304"	"p7443_NSCLC - squamous cell carcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_squa"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623305"	"p7501_NSCLC - adenocarcinoma"	NA	NA	"y"	"lung"	"f"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623306"	"p7556_NSCLC - large cell carcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_lcc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623307"	"p7584_NSCLC - adenocarcinoma"	NA	NA	"n"	"lung"	"f"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623308"	"p7622_NSCLC - adenocarcinoma"	NA	NA	"y"	"lung"	"f"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623309"	"p7662_NSCLC - large cell carcinoma"	NA	NA	NA	"lung"	""	NA	NA	NA	"nsclc_lcc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM623310"	"P7743_NSCLC - large cell carcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_lcc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623311"	"P7759_NSCLC - adenocarcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623312"	"p7769_NSCLC - large cell carcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_lcc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM623313"	"p7793_NSCLC - adenocarcinoma_rep1"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623314"	"p7793a_NSCLC - adenocarcinoma_rep2"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623315"	"p7793c_NSCLC - adenocarcinoma_rep3"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623316"	"p7797_NSCLC - adenocarcinoma"	NA	NA	"n"	"lung"	"m"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM623317"	"P7798_NSCLC - large cell carcinoma"	NA	NA	"n"	"lung"	"f"	NA	NA	NA	"nsclc_lcc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623318"	"P7815_NSCLC - adenocarcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623319"	"P7870_NSCLC - large cell carcinoma"	NA	NA	"n"	"lung"	"m"	NA	NA	NA	"nsclc_lcc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM623320"	"P7876_NSCLC - adenocarcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623321"	"p7890_NSCLC - large cell carcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_lcc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM623322"	"p7941_NSCLC - squamous cell carcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_squa"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623323"	"p959_NSCLC - large cell carcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_lcc"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"n"	NA	NA	NA	NA	NA	NA	NA
+"GSM623324"	"p4801_NSCLC - adenocarcinoma"	NA	NA	"y"	"lung"	"m"	NA	NA	NA	"nsclc_adeno"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	"y"	"y"	"n"	NA	NA	NA	NA	NA	NA	NA

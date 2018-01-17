@@ -1,0 +1,30 @@
+source setvars
+
+URL="http://www.ebi.ac.uk/arrayexpress/files/E-MTAB-386/E-MTAB-386.processed.1.zip"
+
+strInputAccession="E-MTAB-386"
+accessionDir=$DATAHOME/$strInputAccession
+processedDir=$accessionDir/PROCESSED
+defaultDir=$processedDir/DEFAULT
+
+mkdir $accessionDir
+mkdir $processedDir
+mkdir $defaultDir
+
+cd $defaultDir
+
+
+wget --timestamping $URL
+
+unzip -o E-MTAB-386.processed.1.zip
+rm E-MTAB-386.processed.1.zip
+
+sed -e 's/ebi.ac.uk:MIAMExpress:Reporter:A-MEXP-931.//' normalized.txt.proc > tmp.txt
+sed -i -e 's/RNA-hyb-//g' tmp.txt
+sed -i -e 's/Scan REF//' tmp.txt
+sed -i -e 's/	/,/g' tmp.txt
+sed -i -e 's/ rep/.rep/g' tmp.txt
+sed -i -e 's/DFCI-/DFCI./g' tmp.txt
+
+grep -v "Reporter REF" tmp.txt > E-MTAB-386_default_exprs.csv
+rm tmp.txt

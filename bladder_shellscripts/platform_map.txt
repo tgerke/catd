@@ -1,0 +1,7 @@
+GEO_accession	platform_name
+GPL91	HG_U95A
+GPL8300	HG_U95Av2
+GPL570	HG-U133_Plus_2
+GPL6102	Illumina_human-6v2
+GPL80	Hu6800
+

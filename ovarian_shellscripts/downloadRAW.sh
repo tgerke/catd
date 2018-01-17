@@ -1,0 +1,25 @@
+source setvars
+
+$REXEC CMD BATCH --vanilla "--args GSE12418 $DATAHOME" $SRCHOME/gse_RAW.R $LOG/GSE12418_downloadRAW.log
+$REXEC CMD BATCH --vanilla "--args GSE12470 $DATAHOME" $SRCHOME/gse_RAW.R $LOG/GSE12470_downloadRAW.log
+$REXEC CMD BATCH --vanilla "--args GSE13876 $DATAHOME" $SRCHOME/gse_RAW.R $LOG/GSE13876_downloadRAW.log
+$REXEC CMD BATCH --vanilla "--args GSE14764 $DATAHOME" $SRCHOME/gse_RAW.R $LOG/GSE14764_downloadRAW.log
+$REXEC CMD BATCH --vanilla "--args GSE17260 $DATAHOME" $SRCHOME/gse_RAW.R $LOG/GSE17260_downloadRAW.log
+$REXEC CMD BATCH --vanilla "--args GSE18520 $DATAHOME" $SRCHOME/gse_RAW.R $LOG/GSE18520_downloadRAW.log
+
+$REXEC CMD BATCH --vanilla "--args GSE2109 $DATAHOME $CURATED/GSE2109_curated_pdata.txt" $SRCHOME/download_RAW_GSE2109.R $LOG/GSE2109_downloadRAW.log
+$REXEC CMD BATCH --vanilla "--args GSE26712 $DATAHOME" $SRCHOME/gse_RAW.R $LOG/GSE26712_downloadRAW.log
+$REXEC CMD BATCH --vanilla "--args GSE6008 $DATAHOME" $SRCHOME/gse_RAW.R $LOG/GSE6008_downloadRAW.log
+$REXEC CMD BATCH --vanilla "--args GSE6822 $DATAHOME" $SRCHOME/gse_RAW.R $LOG/GSE6822_downloadRAW.log
+$REXEC CMD BATCH --vanilla "--args GSE8842 $DATAHOME" $SRCHOME/gse_RAW.R $LOG/GSE8842_downloadRAW.log
+$REXEC CMD BATCH --vanilla "--args GSE9891 $DATAHOME" $SRCHOME/gse_RAW.R $LOG/GSE9891_downloadRAW.log
+$REXEC CMD BATCH --vanilla "--args GSE19829 $DATAHOME GPL570" $SRCHOME/gse_RAW.R $LOG/GSE19829-GPL570_downloadRAW.log
+
+$REXEC CMD BATCH --vanilla "--args GSE19829 $DATAHOME GPL8300" $SRCHOME/gse_RAW.R $LOG/GSE19829-GPL8300_downloadRAW.log
+$REXEC CMD BATCH --vanilla "--args GSE20565 $DATAHOME" $SRCHOME/gse_RAW.R $LOG/GSE20565_downloadRAW.log
+$REXEC CMD BATCH --vanilla "--args GSE30161 $DATAHOME" $SRCHOME/gse_RAW.R $LOG/GSE30161_downloadRAW.log
+
+./download_PMID15897565.sh
+./download_PMID17290060.sh
+./download_PMID19318476.sh
+./download_TCGA.sh

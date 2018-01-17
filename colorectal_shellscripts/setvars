@@ -1,0 +1,11 @@
+REXEC=/usr/local/bin/R
+OVHOME=`pwd | sed -e 's|/colorectal_shellscripts||'`
+SRCHOME=$OVHOME/src
+DATAHOME=$OVHOME/DATA
+CURATIONHOME=$OVHOME/curation/CRC
+CURATIONSRC=$CURATIONHOME/src
+UNCURATED=$CURATIONHOME/uncurated
+CURATED=$CURATIONHOME/curated
+QC=$OVHOME/qualitycontrol
+LOG=$OVHOME/LOG
+

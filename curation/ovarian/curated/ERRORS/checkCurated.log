@@ -1,0 +1,257 @@
+
+R version 2.15.0 (2012-03-30)
+Copyright (C) 2012 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+Platform: x86_64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> ## R CMD BATCH --vanilla checkCurated.R ../curated/ERRORS/checkCurated.log
+> 
+> #source("../../functions.R")
+> inputargs <- commandArgs(TRUE)
+> curated.dir <- inputargs[1]
+> template.file <- inputargs[2]
+> output.dir <- paste(curated.dir,"/ERRORS",sep="")
+> 
+> if(!file.exists(output.dir)) dir.create(output.dir,recursive=TRUE)
+> 
+> ##the template to use
+> template <- read.csv(template.file,as.is=TRUE)
+> 
+> ##the list of filenames to check
+> files <- dir(curated.dir,pattern="\\.txt$")
+> 
+> ##Create a checklist for three checks in all files
+> checklist <- matrix(NA,ncol=2,nrow=length(files))
+> colnames(checklist) <- c("column.names","variable.regex.checks")
+> rownames(checklist) <- files
+> 
+> ##-------------------------------------------------
+> ##check that the column names match the template
+> ##-------------------------------------------------
+> for (i in 1:length(files)){
++   print(paste("Checking column names in",files[i]))
++   curated <- read.delim(paste(curated.dir,files[i],sep="/"),as.is=TRUE)
++   ##check column names
++   if(identical(all.equal(colnames(curated),template$col.name),TRUE)){
++     print("column names OK")
++     checklist[i,"column.names"] <- TRUE
++   }else{
++     all.equal(colnames(curated),template$col.name)
++     print("Column names should be: ")
++     print(template$col.name)
++     print("Column names are: ")
++     print(colnames(curated))
++     checklist[i,"column.names"] <- FALSE
++   }
++ }
+[1] "Checking column names in E-MTAB-386_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE12418_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE12470_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE13876_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE14764_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE17260_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE18154_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE18520_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE19161_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE19829-GPL570_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE19829-GPL8300_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE20565_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE2109_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE26712_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE30009_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE32062-GPL6480_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE32063_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE6008_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE6822_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE8842_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in GSE9891_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in PMID14706684_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in PMID15897565_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in PMID17290060_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in PMID19318476_curated_pdata.txt"
+[1] "column names OK"
+[1] "Checking column names in TCGA_curated_pdata.txt"
+[1] "column names OK"
+> 
+> ##-------------------------------------------------
+> ##construct the regexes from template$allowedvalues
+> ##-------------------------------------------------
+> regexes <- template$allowedvalues
+> regexes <- paste("^",regexes,"$",sep="")
+> regexes <- gsub("|","$|^",regexes,fixed=TRUE)
+> ##regexes[template$requiredness=="optional"] <- paste(regexes[template$requiredness=="optional"],"|^NA$",sep="")
+> regexes[grep("^*$",regexes,fixed=TRUE)] <- "."
+> names(regexes) <- template$col.name
+> regexes[grep("decimal",regexes)] <- "^[0-9]+\\.?[0-9]*$"
+> 
+> ##remove previously existing regexerrors files
+> unlink(paste(output.dir,"/regexerrors*.txt",sep=""))
+> 
+> ##-------------------------------------------------
+> ##Check the data entries in each column for regex
+> ## matching, uniqueness, and missingness
+> ##-------------------------------------------------
+> for (i in which(checklist[,"column.names"])){
++   print(paste("Checking regexes in",files[i]))
++   curated <- read.delim(paste(curated.dir,files[i],sep="/"),as.is=TRUE)
++   ##check column names
++   column.OK <- rep(NA,ncol(curated))
++   names(column.OK) <- colnames(curated)
++   for(j in 1:ncol(curated)){
++     doesmatch <- grep(regexes[j],curated[,j])
++     if(template[j,"requiredness"]=="optional"){
++       doesmatch <- c(doesmatch,which(is.na(curated[,j])))
++     }
++     doesnotmatch <- 1:nrow(curated)
++     doesnotmatch <- doesnotmatch[!doesnotmatch %in% doesmatch]
++     ## if field must be unique, add non-unique values to doesnotmatch
++     if(template[j,"uniqueness"]=="unique"){
++       counts.table <- table(curated[,j])
++       counts <- counts.table[match(curated[,j],names(counts.table))]  #this counts the occurences
++       counts[is.na(counts)] <- 1  ##Consider NAs to be unique
++       nonunique <- which(counts>1)
++       doesnotmatch <- c(doesnotmatch,nonunique)
++       doesnotmatch <- unique(doesnotmatch)  #don't duplicate fields which fail both tests
++     }
++     if(length(doesnotmatch)==0){
++       column.OK[j] <- TRUE
++     }else{
++       column.OK[j] <- FALSE
++       curated[doesnotmatch,j] <- paste("!!!",curated[doesnotmatch,j],"!!!",sep="")
++     }
++   }
++   if(all(column.OK)){
++     print("all regex checks OK")
++     checklist[i,"variable.regex.checks"] <- TRUE
++   }else{
++     print(paste("The following columns failed the regex check for ",files[i],":",sep=""))
++     print(names(column.OK)[!column.OK])
++     print(curated[,!column.OK])
++     write.table(curated[,!column.OK],paste(output.dir,"/regexerrors_",files[i],sep=""))
++     checklist[i,"variable.regex.checks"] <- FALSE
++   }
++ }
+[1] "Checking regexes in E-MTAB-386_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in GSE12418_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in GSE12470_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in GSE13876_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in GSE14764_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in GSE17260_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in GSE18154_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in GSE18520_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in GSE19161_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in GSE19829-GPL570_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in GSE19829-GPL8300_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in GSE20565_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in GSE2109_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in GSE26712_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in GSE30009_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in GSE32062-GPL6480_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in GSE32063_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in GSE6008_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in GSE6822_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in GSE8842_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in GSE9891_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in PMID14706684_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in PMID15897565_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in PMID17290060_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in PMID19318476_curated_pdata.txt"
+[1] "all regex checks OK"
+[1] "Checking regexes in TCGA_curated_pdata.txt"
+[1] "all regex checks OK"
+> 
+> print(checklist)
+                                   column.names variable.regex.checks
+E-MTAB-386_curated_pdata.txt               TRUE                  TRUE
+GSE12418_curated_pdata.txt                 TRUE                  TRUE
+GSE12470_curated_pdata.txt                 TRUE                  TRUE
+GSE13876_curated_pdata.txt                 TRUE                  TRUE
+GSE14764_curated_pdata.txt                 TRUE                  TRUE
+GSE17260_curated_pdata.txt                 TRUE                  TRUE
+GSE18154_curated_pdata.txt                 TRUE                  TRUE
+GSE18520_curated_pdata.txt                 TRUE                  TRUE
+GSE19161_curated_pdata.txt                 TRUE                  TRUE
+GSE19829-GPL570_curated_pdata.txt          TRUE                  TRUE
+GSE19829-GPL8300_curated_pdata.txt         TRUE                  TRUE
+GSE20565_curated_pdata.txt                 TRUE                  TRUE
+GSE2109_curated_pdata.txt                  TRUE                  TRUE
+GSE26712_curated_pdata.txt                 TRUE                  TRUE
+GSE30009_curated_pdata.txt                 TRUE                  TRUE
+GSE32062-GPL6480_curated_pdata.txt         TRUE                  TRUE
+GSE32063_curated_pdata.txt                 TRUE                  TRUE
+GSE6008_curated_pdata.txt                  TRUE                  TRUE
+GSE6822_curated_pdata.txt                  TRUE                  TRUE
+GSE8842_curated_pdata.txt                  TRUE                  TRUE
+GSE9891_curated_pdata.txt                  TRUE                  TRUE
+PMID14706684_curated_pdata.txt             TRUE                  TRUE
+PMID15897565_curated_pdata.txt             TRUE                  TRUE
+PMID17290060_curated_pdata.txt             TRUE                  TRUE
+PMID19318476_curated_pdata.txt             TRUE                  TRUE
+TCGA_curated_pdata.txt                     TRUE                  TRUE
+> write.table(checklist,paste(output.dir,"checklist.txt",sep="/"))
+> 
+> proc.time()
+   user  system elapsed 
+  0.428   0.036   0.456 

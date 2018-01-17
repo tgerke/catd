@@ -1,0 +1,14 @@
+Package: curatedOvarianData
+Type: Package
+Title: Clinically Annotated Data for the Ovarian Cancer Transcriptome
+Version: 0.9
+Date: 2012-10-06
+Author: Benjamin F. Ganzfried, Dr. Steve Skates, Dr. Markus Riester, Dr. Victoria Wang, Thomas Risch, Dr. Benjamin Haibe-Kains, Dr. Svitlana Tyekucheva, Dr. Jie Ding, Ina Jazic, Dr. Michael Birrer, Dr. Giovanni Parmigiani, Dr. Curtis Huttenhower, Dr. Levi Waldron
+Maintainer: Levi Waldron <levi@jimmy.harvard.edu>
+Description: The curatedOvarianData package provides relevant functions and data for gene expression analysis in patients with ovarian cancer.
+Depends: R (>= 2.10.0), affy
+Imports: BiocGenerics 
+Suggests: survival, RUnit
+License: Artistic-2.0
+URL: http://bcb.dfci.harvard.edu/~gp/
+

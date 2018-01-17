@@ -1,0 +1,54 @@
+"sample_name"	"alt_sample_name"	"unique_patient_ID"	"sample_type"	"subtype"	"primarysite"	"arrayedsite"	"summarygrade"	"summarystage"	"T"	"substage"	"G"	"N"	"M"	"age_at_initial_pathologic_diagnosis"	"pltx"	"tax"	"neo"	"days_to_tumor_recurrence"	"recurrence_status"	"days_to_death"	"vital_status"	"os_binary"	"relapse_binary"	"site_of_tumor_first_recurrence"	"primary_therapy_outcome_success"	"chemo_response"	"inferred_chemo_response"	"debulking"	"batch"
+"GSM311992"	"Peritoneum normal 3"	NA	"healthy"	NA	"ov"	NA	NA	NA	""	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312129"	"Peritoneum normal 4"	NA	"healthy"	NA	"ov"	NA	NA	NA	""	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312130"	"Peritoneum normal 7"	NA	"healthy"	NA	"ov"	NA	NA	NA	""	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312131"	"Peritoneum normal 12"	NA	"healthy"	NA	"ov"	NA	NA	NA	""	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312132"	"Peritoneum normal 15"	NA	"healthy"	NA	"ov"	NA	NA	NA	""	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312133"	"Peritoneum normal 16"	NA	"healthy"	NA	"ov"	NA	NA	NA	""	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312134"	"Peritoneum normal 18"	NA	"healthy"	NA	"ov"	NA	NA	NA	""	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312135"	"Peritoneum normal 21"	NA	"healthy"	NA	"ov"	NA	NA	NA	""	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312136"	"Peritoneum normal 23"	NA	"healthy"	NA	"ov"	NA	NA	NA	""	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312137"	"Peritoneum normal 30"	NA	"healthy"	NA	"ov"	NA	NA	NA	""	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312138"	"Advanced serous ovarian cancer 2"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312139"	"Advanced serous ovarian cancer 6"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312140"	"Advanced serous ovarian cancer 7"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312141"	"Advanced serous ovarian cancer 11"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312142"	"Advanced serous ovarian cancer 17"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312143"	"Advanced serous ovarian cancer 18"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312144"	"Advanced serous ovarian cancer 20"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312145"	"Advanced serous ovarian cancer 24"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312146"	"Advanced serous ovarian cancer 25"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312147"	"Advanced serous ovarian cancer 36"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312148"	"Advanced serous ovarian cancer 37"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312149"	"Advanced serous ovarian cancer 38"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312150"	"Advanced serous ovarian cancer 43"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312151"	"Advanced serous ovarian cancer 49"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312152"	"Advanced serous ovarian cancer 54"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312153"	"Advanced serous ovarian cancer 57"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312154"	"Advanced serous ovarian cancer 61"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312155"	"Advanced serous ovarian cancer 10"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312156"	"Advanced serous ovarian cancer 15"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312157"	"Advanced serous ovarian cancer 23"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312158"	"Advanced serous ovarian cancer 27"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312159"	"Advanced serous ovarian cancer 39"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312160"	"Advanced serous ovarian cancer 42"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312161"	"Advanced serous ovarian cancer 45"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312162"	"Advanced serous ovarian cancer 46"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312163"	"Advanced serous ovarian cancer 50"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312165"	"Advanced serous ovarian cancer 51"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312167"	"Advanced serous ovarian cancer 52"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312168"	"Advanced serous ovarian cancer 53"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312170"	"Advanced serous ovarian cancer 55"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312171"	"Advanced serous ovarian cancer 56"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312172"	"Advanced serous ovarian cancer 58"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312173"	"Advanced serous ovarian cancer 60"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312174"	"Advanced serous ovarian cancer 62"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312175"	"Advanced serous ovarian cancer 64"	NA	"tumor"	"ser"	"ov"	NA	NA	"late"	"4"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312176"	"Early serous ovarian cancer 5"	NA	"tumor"	"ser"	"ov"	NA	NA	"early"	"2"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312178"	"Early serous ovarian cancer 8"	NA	"tumor"	"ser"	"ov"	NA	NA	"early"	"2"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312179"	"Early serous ovarian cancer 9"	NA	"tumor"	"ser"	"ov"	NA	NA	"early"	"2"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312180"	"Early serous ovarian cancer 28"	NA	"tumor"	"ser"	"ov"	NA	NA	"early"	"2"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312181"	"Early serous ovarian cancer 32"	NA	"tumor"	"ser"	"ov"	NA	NA	"early"	"2"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312182"	"Early serous ovarian cancer 33"	NA	"tumor"	"ser"	"ov"	NA	NA	"early"	"2"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312183"	"Early serous ovarian cancer 35"	NA	"tumor"	"ser"	"ov"	NA	NA	"early"	"2"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+"GSM312185"	"Early serous ovarian cancer 65"	NA	"tumor"	"ser"	"ov"	NA	NA	"early"	"2"	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA

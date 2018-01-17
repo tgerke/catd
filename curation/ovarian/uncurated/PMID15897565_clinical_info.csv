@@ -1,0 +1,71 @@
+Clinical and File name Key,,,,,
+"Genome ID 
+File name:   0074_GenomeID_h133a_2802.cel",Cancer Type,AgeDx,STAGE,GRADE,Debulking
+2536,Early stage,42,IA,1, 
+1761,Early stage,72,IC,2, 
+1762,Early stage,52,IA,3, 
+1763,Early stage,58,IIC,2, 
+1764,Early stage,48,IC,3, 
+1765,Early stage,45,IA,2, 
+1903,Early stage,73,IIC,3, 
+2390,Early stage,66,IA,2, 
+2391,Early stage,77,IA,3, 
+2392,Early stage,46,IIC,3, 
+2393,Early stage,49,IIC,2, 
+1772,Long,33,IIIC,3,S
+1773,Long,68,IIIC,2,S
+1774,Long,56,IIIC,3,S
+1775,Long,60,IIIC,2,O
+1776,Long,40,IIIC,2,S
+1777,Long,78,IIIB,3,O
+1778,Long,66,IIIB,2,O
+1779,Long,53,IIIC,3,O
+1780,Long,63,IIIC,2,O
+1781,Long,73,IIIC,3,O
+1900,Long,62,IIIA,3,O
+1901,Long,50,IIIC,2,O
+1902,Long,67,IIIC,1,O
+1904,Long,70,IIIC,3,O
+1907,Long,73,IIIC,4,S
+2019,Long,48,IIIC,2,O
+2020,Long,58,IIIC,2,O
+2021,Long,62,IIIC,2,S
+2033,Long,57,IIIC,2,S
+2032,Long,58,IIIC,2,S
+2031,Long,63,IIIC,2,O
+1989,Long,67,IIIC,2,S
+2394,Long,62,IIIC,2,O
+2395,Long,40,IIIC,2,S
+1827,Short,51,IV,3,S
+1828,Short,59,IV,3,O
+1829,Short,65,IIIC,3,S
+1830,Short,79,IIIC,2,S
+1831,Short,70,IIIC,2,S
+1832,Short,59,IIIC,2,S
+1833,Short,55,IIIC,3,S
+1834,Short,48,IIIC,2,S
+1835,Short,54,IIIC,2,S
+1836,Short,57,IIIC,3,S
+1905,Short,70,IIIC,2,O
+1906,Short,75,IIIB,2,O
+1908,Short,59,IIIC,3,O
+1909,Short,65,IIIC,3,S
+2030,Short,54,IV,3,S
+2029,Short,68,IIIC,3,S
+2028,Short,71,IIIC,3,S
+2027,Short,65,IIIC,2,O
+2026,Short,46,IIIC,3,S
+2003,Short,49,IIIC,3,S
+2004,Short,55,IIIC,2,S
+2005,Short,47,IIIC,?,S
+2396,Short,73,IIIC,2,O
+2397,Short,57,IIIC,2,S
+2398,Short,37,IV,2,O
+2399,Short,62,IIIC,2,S
+2400,Short,62,IIIC,3,O
+2401,Short,57,IIIC,2,O
+2402,Short,57,IV,2,O
+2484,Short,68,IV,2,O
+,,,,,
+,long = > 7 yrs survival,,,,S = suboptimal
+,short = < 3 yrs survival,,, ,O = optimal

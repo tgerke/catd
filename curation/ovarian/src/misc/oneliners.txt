@@ -1,0 +1,5 @@
+#Add postProcess line right before write.table for one .r file:
+sed -i -e "s/write.table/\ncurated <- postProcess(curated)\n\nwrite.table/" GSE14764_curation.r
+
+#same for all .r files:
+for file in `ls *.r`;do sed -i -e "s/write.table/\ncurated <- postProcess(curated)\n\nwrite.table/" $file;done

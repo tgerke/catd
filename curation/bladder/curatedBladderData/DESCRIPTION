@@ -1,0 +1,13 @@
+Package: curatedBladderData
+Type: Package
+Title: Bladder Cancer Gene Expression Analysis
+Version: 0.99.0
+Date: 2012-06-02
+Author: Benjamin F. Ganzfried, Dr. Levi Waldron, Dr. Steve Skates, Dr. Markus Riester, Dr. Victoria Wang, Thomas Risch, Dr. Benjamin Haibe-Kains, Dr. Curtis Huttenhower, Dr. Svitlana Tyekucheva, Dr. Jie Ding, Ina Jazic, Dr. Michael Birrer, Dr. Giovanni Parmigiani
+Maintainer: Levi Waldron <levi@jimmy.harvard.edu>
+Description: The curatedBladderData package provides relevant functions and data for gene expression analysis in patients with bladder cancer.
+Depends: R (>= 2.10.0), affy
+Suggests: survival
+License: Artistic-2.0
+URL: http://bcb.dfci.harvard.edu/ovariancancer
+biocViews: ExperimentData, Cancer, Bladder, RNAExpressionData

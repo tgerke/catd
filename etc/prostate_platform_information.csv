@@ -1,0 +1,25 @@
+"Accession ID",GEO_platform_accession,platform_summary,biomart_ID
+GSE12418,GPL5886,Swegene,NA
+GSE12470,GPL887,"Agilent G4110B",agilent_wholegenome
+GSE13876,GPL7759,"Operon two-color oligo",NA
+GSE14764,GPL96,HG-U133A,affy_hg_u133a
+GSE17260,GPL6848,"Agilent G4112A",agilent_wholegenome
+GSE18520,GPL570,HG-U133_Plus_2,affy_hg_u133_plus_2
+GSE19829-GPL570,GPL570,HG-U133_Plus_2,affy_hg_u133_plus_2
+GSE19829-GPL8300,GPL8300,HG_U95Av2,affy_hg_u95av2
+GSE9891,GPL570,HG-U133_Plus_2,affy_hg_u133_plus_2
+GSE20565-GPL570,GPL570,HG-U133_Plus_2,affy_hg_u133_plus_2
+GSE2109,GPL570,HG-U133_Plus_2,affy_hg_u133_plus_2
+GSE26712,GPL96,HG-U133A,affy_hg_u133a
+GSE6008,GPL96,HG-U133A,affy_hg_u133a
+GSE6822,GPL80,Hu6800,affy_hugenefl
+GSE8842,GPL5689,"Agilent G4100A",agilent_wholegenome
+PMID14706684,GPL80,Hu6800,affy_hugenefl
+PMID15897565,GPL96,HG-U133A,affy_hg_u133a
+PMID19318476,GPL96,HG-U133A,affy_hg_u133a
+PMID17290060,GPL96,HG-U133A,affy_hg_u133a
+TCGA,GPL4685,HT-HG_U133A,affy_hg_u133a
+PMID15505275,GPL8300,HG_U95A,affy_hg_u95a
+GSE32062-GPL6480,GPL6480,"Agilent G4112F",agilent_wholegenome
+GSE32063,GPL6480,"Agilent G4112F",agilent_wholegenome
+GSE30009,GPL13728,"TaqMan qRT-PCR 380",NA

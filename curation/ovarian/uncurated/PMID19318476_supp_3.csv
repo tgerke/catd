@@ -1,0 +1,21 @@
+Patient,Institution,*Prediction long-term survival,Stage
+x3033,Duke,0.33,IA
+x3091,Duke,0.88,IA
+x3121,Duke,0.86,IC
+x3124,Duke,0.28,2B
+x3144,Duke,0.67,IC
+x3160,Duke,0.94,IA
+x3286,Duke,0.89,IB
+x3299,Duke,0.48,IA
+x3357,Duke,0.75,IC
+x3404,Duke,0.85,2C
+x3477,Duke,0.99,2C
+x3519,Duke,0.7,2B
+bl2533,Duke,0.45,3A
+bl2863,Duke,0.96,3A
+bl2884,Duke,0.88,IA
+bl2962,Duke,0.97,2B
+bl5301,Duke,0.89,IC
+bl5311,Duke,0.89,IC
+bl5391,Duke,0.05,2C
+bl5402,Duke,0.75,IA
